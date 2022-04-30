@@ -1,11 +1,7 @@
 import 'react-vertical-timeline-component/style.min.css';
-import styled from "styled-components";
 import { BsCurrencyEuro, BsGoogle, BsWallet} from "react-icons/bs";
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import { GrValidate} from "react-icons/gr"
-import { NavLink } from "react-router-dom";
-import { Box, Center, Container, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
-import { FcNext } from "react-icons/fc";
+import {VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import {Container, Heading, Text } from "@chakra-ui/react";
 import {
   Modal,
   ModalOverlay,
@@ -17,7 +13,6 @@ import {
   Button
 } from '@chakra-ui/react'
 import { useDisclosure } from '@chakra-ui/hooks';
-import Logo from  "../../asset/Logo.png"
 
 function Moonpay() {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -28,7 +23,7 @@ function Moonpay() {
         contentStyle={{ background: '#091843', color: '#fff' }}
         contentArrowStyle={{ borderRight: '7px solid  #091843' }}
         iconStyle={{ background: '#091843', color: '#fff' }}
-        icon={<BsGoogle/>}
+        icon={<BsCurrencyEuro/>}
         
       >
         <Container color="white" >

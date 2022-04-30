@@ -34,7 +34,7 @@ function Metamask() {
     contentStyle={{ background: '#091843', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  #091843' }}
     iconStyle={{ background: '#091843', color: '#fff' }}
-    icon={<BsCurrencyEuro />}
+    icon={< BsWallet />}
   >
       <Container color="white" >
   <Text>

@@ -1,7 +1,7 @@
 
 import 'react-vertical-timeline-component/style.min.css';
 import styled from "styled-components";
-import { BsWallet} from "react-icons/bs";
+import {GiReceiveMoney} from "react-icons/gi"
 import {  VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import { Container, Heading, Text } from "@chakra-ui/react";
 import {
@@ -25,7 +25,7 @@ return(
     contentStyle={{ background: '#091843', color: '#fff' }}
     contentArrowStyle={{ border: '7px solid  #091843' }}
     iconStyle={{ background: '#091843', color: '#fff' }}
-    icon={< BsWallet/>}
+    icon={< GiReceiveMoney/>}
   >
    <Container color="white" >
   <Text>

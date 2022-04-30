@@ -85,7 +85,7 @@ export default function NavMenu() {
         </Link>
       </NavLink>
 
-      <NavLink to="/step">
+      <NavLink to="/steptuto">
         <Link>
         <RiFileCopyLine />
         <H3>In 3 Steps</H3>
