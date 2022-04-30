@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Acceuil from "./Components/Accueil";
+import { Route, Routes } from "react-router-dom";
+import StepTuto from "./Components/StepTuto";
+import Projet from "./Components/Project";
+import Step from "./Components/Steps";
+import Acc from "./Components/Acc";
+import StepTu from "./Components/StepTu";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <>
+ <Routes>
+ <Route exact path="/" element={<Acc/>}></Route>
+ <Route exact path="/steptuto" element={<StepTu/>}></Route>
+ <Route  path="/projet" element={<Projet/>}></Route>
+ <Route  path="/step" element={<Step/>}></Route>
+ </Routes>
+ </>
   );
 }
 

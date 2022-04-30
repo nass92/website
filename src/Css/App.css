@@ -1,0 +1,72 @@
+body{
+  background-color: #091843;
+  margin:0;
+  padding:0;
+}
+.coin-percent {
+  width:110px;
+}
+.red{
+  color: rgb(255, 0, 0);
+}
+.green{
+  color: rgb(14, 219, 14);
+}
+
+.titre{
+  font-family: Apple Chancery, cursive;
+  font-size: 40px;
+  text-decoration: underline;
+  color: blanchedalmond;
+  
+}
+.sous-titre {
+  margin: 20px 0px;
+  text-align: center;
+  font-style: italic;
+  color: rgb(190, 189, 189);
+}
+.phrase{
+  font-family:Georgia, serif;
+  font-size: 23px;
+  margin-top: 40px;
+  font-style: italic;
+  color:blanchedalmond
+}
+.sous_phrase{
+  font-family:Georgia, serif;
+  font-size: 19px;
+  margin-bottom: 10px;
+  font-style: italic;
+font-weight: bolder;}
+
+.go{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80px;
+}
+.next{
+size: 1000px;
+}
+
+img{
+  max-width : 200px;
+  max-height : 150px;
+}
+.sp{
+color: blanchedalmond;
+text-decoration: underline;
+font-style: italic;
+display: flex;
+justify-content: flex-end;
+}
+.box{
+  margin-bottom: 25px;
+}
+.la{
+  color:rgb(206, 188, 161)
+}
+.buttonTuto{
+  display: flex;
+justify-content: flex-end;
+}
