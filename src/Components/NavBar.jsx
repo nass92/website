@@ -26,6 +26,11 @@ const NavMneuEl = styled.nav`
       width: 100%;
       height: 80px;
       backdrop-filter: blur(50px);
+      background: #1f5156;
+      left: 0px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
     }
 
 `;
