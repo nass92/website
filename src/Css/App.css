@@ -43,7 +43,8 @@ font-weight: bolder;}
 .go{
   display: flex;
   justify-content: flex-end;
-  margin-right: 80px;
+  margin-top: 80px;
+  font-weight: 1000px;
 }
 .next{
 size: 1000px;

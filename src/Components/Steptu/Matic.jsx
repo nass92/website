@@ -1,5 +1,5 @@
 import 'react-vertical-timeline-component/style.min.css';
-import { BsCurrencyEuro, BsGoogle, BsWallet} from "react-icons/bs";
+import { BsCurrencyEuro, } from "react-icons/bs";
 import {VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import {Container, Heading, Text } from "@chakra-ui/react";
 import {

@@ -1,7 +1,6 @@
 import 'react-vertical-timeline-component/style.min.css';
 import { useDisclosure } from '@chakra-ui/hooks';
-import { extendTheme } from '@chakra-ui/react'
-import { BsCurrencyEuro, BsGoogle, BsWallet} from "react-icons/bs";
+import {  BsWallet} from "react-icons/bs";
 import {  VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import {Center, Container,  Heading, Text,
   Modal,
@@ -12,19 +11,13 @@ import {Center, Container,  Heading, Text,
   ModalBody,
   ModalCloseButton,
   Button,
-  Box,
+  
 } from '@chakra-ui/react'
 
 
 function Metamask() {
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const theme = extendTheme({
-        textStyle: {
-          h1: {
-            // you can also use responsive styles
-            textDecoration: 'underline',
-          },},})
-    
+   
 
 
     return(

@@ -1,37 +1,32 @@
-import styled from "styled-components";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { GrValidate} from "react-icons/gr"
 import { BsInstagram, BsSnapchat,  BsTelegram, BsDiscord} from "react-icons/bs";
-import { NavLink } from "react-router-dom";
-import { Box, Center, Heading, Avatar, Text, Container, Grid, GridItem  } from "@chakra-ui/react";
-import { FcNext } from "react-icons/fc";
-import PtitLogo from "../asset/PtitLogo.png"
-import Logo from "../asset/Logo.png"
+import { Box, Center, Heading, Avatar, Grid, GridItem, Container  } from "@chakra-ui/react";
+import Logo from "../../asset/Logo.png"
 import {VscGraphLine} from "react-icons/vsc"
 import {CgDanger,} from "react-icons/cg"
 import {IoShareSocialSharp} from "react-icons/io5"
-import Api from "./CoinApi";
-import { Flex, Spacer } from '@chakra-ui/react'
-import Navbar from "./navbar/navbar";
-
+import Api from "../cryptoprice/CoinApi";
+import Navbar from "../navbar/navbar";
+import {DesktopRoot} from "../../Css/style"
+import Fusée from '../navbar/fusée';
 function Acc() {
-  return (
+  return (<>
+        <Container maxW='3xs' ml="-15px" mr='50px'  className="fixed-top ">
+        <Navbar/>
+        </Container>
     <DesktopRoot>
 
-<div className="fixed-top ">
-        <Navbar/>
-        </div>
 
     <VerticalTimeline>
-
 
 
 <Grid templateColumns='repeat(3)'  gap={4}>
   <GridItem colSpan={2} >
   <Box maxW='md' p='4' color='white' ml='30px' mt="15px">
   <Center>
-  <img src={Logo}   />
+  <img src={Logo}  alt="Logo Chapeau de paille" />
   </Center>
   <h2 className="phrase"> Voici comment comprendre, analyser et entrer dans le monde de la crypto-monnaie</h2>
   </Box>
@@ -70,7 +65,9 @@ function Acc() {
     iconStyle={{ background: '#091843', color: '#fff' }}
     icon={<VscGraphLine/>}
   >
+    <Container maxW="xs">
    <Api/>
+   </Container>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     date= {<Heading>N'oubliez pas.</Heading>}
@@ -108,14 +105,14 @@ projets solides dans le secteurs des cryptos-monnaies.</p>
   </div>
     </div>
   </VerticalTimelineElement>
-  
+        
   <Box color="white" className="go">
-      <NavLink to="/steptuto">
-   
-    <Heading  as="h1"size="4xl"  ><FcNext /> </Heading>
-    
-    </NavLink>
+    <a href="steptuto" class="nav-link">
+        <Fusée/>
+        
+        </a>
     </Box>
+     
   
   <VerticalTimelineElement
     iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
@@ -124,20 +121,10 @@ projets solides dans le secteurs des cryptos-monnaies.</p>
 
 </VerticalTimeline>
 </DesktopRoot>
+</>
   );
 }
-const DesktopRoot = styled.div`
-  background-color: #091843;
-  margin: 0;
-  padding: 0;
-`;
 
-const EarningsIncrease = styled.h5`
-  text-align: center;
-  font-weight: normal;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 0.5rem;
-  border-radius: 2rem;
-`;
+
 
 export default Acc;

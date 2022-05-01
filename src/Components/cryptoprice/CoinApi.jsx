@@ -5,7 +5,7 @@ import Coin from "./CryptoMarket";
 
 const Api = ({ setCrypto }) => {
   const [coins, setCoins] = useState([])
-  const [search, setSearch] = useState('')
+  const [search,] = useState('')
 
   useEffect(() => {
     axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&ids=bitcoin%2C%20ethereum%2C%20decentraland%2C%20aave%2C%20sandbox&order=market_cap_desc&per_page=100&page=1&sparkline=false')
@@ -15,9 +15,7 @@ const Api = ({ setCrypto }) => {
       }).catch(error => alert('ERROR 404'))
   }, [])
 
-  const handleChange = e => {
-    setSearch(e.target.value)
-  }
+
 
   const filteredCoins = coins.filter(coin =>
     coin.name.toLowerCase().includes(search.toLowerCase()))

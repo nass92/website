@@ -1,28 +1,15 @@
 import 'react-vertical-timeline-component/style.min.css';
-import styled from "styled-components";
-import { BsCurrencyEuro, BsGoogle, BsWallet} from "react-icons/bs";
+import {DesktopRoot} from "../../Css/style"
+import { BsGoogle} from "react-icons/bs";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import { GrValidate} from "react-icons/gr"
-import { NavLink } from "react-router-dom";
 import { Box, Center, Container, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
-import { FcNext } from "react-icons/fc";
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  Button
-} from '@chakra-ui/react'
-import { useDisclosure } from '@chakra-ui/hooks';
-import Logo from "../asset/Logo.png"
-import Moonpay from './Steptu/Matic';
-import Settoken from './Steptu/Settoken';
-import Metamask from './Steptu/Metamask';
+import Logo from "../../asset/Logo.png"
+import Moonpay from '../Steptu/Matic';
+import Settoken from '../Steptu/Settoken';
+import Metamask from '../Steptu/Metamask';
+import Fusée from '../navbar/fusée';
 function StepTu() {
-  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <DesktopRoot>
     
@@ -32,7 +19,7 @@ function StepTu() {
   <GridItem colSpan={2} >
   <Box maxW='md' p='4' color='white' ml='30px' mt="15px">
   <Center>
-  <img src={Logo}   />
+  <img src={Logo}  alt="logo chapeau de paille" />
   </Center>
   <h2 className="phrase">3 Tuto pour être pret à prendre le large</h2>
   </Box>
@@ -72,13 +59,17 @@ function StepTu() {
     <Moonpay/>
     <Settoken/>
   
-  <Box color="white" className="go">
-      <a href="projet">
+  
+      
    
-    <Heading mb="25px" mt="30px"  size="4xl" ><FcNext  /> </Heading>
-    
-    </a>
+      <Box color="white" className="go">
+  <a href="projet" class="nav-link">
+        <Fusée/>
+        
+        </a>
     </Box>
+    
+  
     <VerticalTimelineElement
     iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
     icon={<GrValidate/>}
@@ -87,18 +78,6 @@ function StepTu() {
 </DesktopRoot>
   );
 }
-const DesktopRoot = styled.div`
-  background-color: #091843;
-  margin: 0;
-  padding: 0;
-`;
 
-const EarningsIncrease = styled.h5`
-  text-align: center;
-  font-weight: normal;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 0.5rem;
-  border-radius: 2rem;
-`;
 
 export default StepTu;

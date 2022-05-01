@@ -2,8 +2,7 @@ import { GiBank } from "react-icons/gi";
 import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { useDisclosure } from '@chakra-ui/hooks';
-import { extendTheme } from '@chakra-ui/react'
-import {Center, Container,  Heading, Text,
+import {Text,
     Modal,
     ModalOverlay,
     ModalContent,
@@ -12,18 +11,13 @@ import {Center, Container,  Heading, Text,
     ModalBody,
     ModalCloseButton,
     Button,
-    Box,
+
   } from '@chakra-ui/react'
   
 
 function Aave() {
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const theme = extendTheme({
-        textStyle: {
-          h1: {
-            // you can also use responsive styles
-            textDecoration: 'underline',
-          },},})
+  
 
 return (
  

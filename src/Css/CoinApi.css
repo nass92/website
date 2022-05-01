@@ -18,22 +18,20 @@
   .coin{
     display: flex;
     align-items: center;
-    padding-right: 24px;
-    min-width: 300px;
+    
+    
   }
   
   .coin h1{
     font-size: 16px;
-    width: 150px;
+    
   }
-  
+   
   .coin img {
-    height: 50px;
-    width: 60px;
+    width: 10%;
     margin-right: 30px;
     margin-top: 30px;
   }
-  
   .coin-symbol {
     text-transform: uppercase;
   }
@@ -44,12 +42,18 @@
     width: 100%;
   }
   .coin-price {
-    width: 110px;
-    margin-left: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin:0px 10px 0px 10px;
   }
   
   .coin-marketcap {
-    width: 155px;
+   
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
   }
   .coin-percent {
     width:110px;

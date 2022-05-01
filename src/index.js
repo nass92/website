@@ -7,6 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
 import './Css/App.css';
+import './Css/nav.css'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
