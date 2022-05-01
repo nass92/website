@@ -73,11 +73,11 @@ function StepTu() {
     <Settoken/>
   
   <Box color="white" className="go">
-      <NavLink to="/projet">
+      <a href="projet">
    
     <Heading mb="25px" mt="30px"  size="4xl" ><FcNext  /> </Heading>
     
-    </NavLink>
+    </a>
     </Box>
     <VerticalTimelineElement
     iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}

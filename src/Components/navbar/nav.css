@@ -45,6 +45,8 @@
   .link-text {
     display: none;
     margin-left: 1rem;
+    color: #279423;
+    font-weight: bold;
   }
   
   .nav-link svg {

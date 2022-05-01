@@ -13,15 +13,17 @@ import {CgDanger,} from "react-icons/cg"
 import {IoShareSocialSharp} from "react-icons/io5"
 import Api from "./CoinApi";
 import { Flex, Spacer } from '@chakra-ui/react'
+import Navbar from "./navbar/navbar";
 
 function Acc() {
   return (
     <DesktopRoot>
 
-
+<div className="fixed-top ">
+        <Navbar/>
+        </div>
 
     <VerticalTimeline>
-
 
 
 

@@ -1,9 +1,8 @@
-import { FaEthereum, FaGamepad,FaBitcoin } from "react-icons/fa";
+import { FaEthereum } from "react-icons/fa";
 import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { useDisclosure } from '@chakra-ui/hooks';
-import { extendTheme } from '@chakra-ui/react'
-import {Center, Container,  Heading, Text,
+import { Text,
     Modal,
     ModalOverlay,
     ModalContent,
@@ -12,18 +11,14 @@ import {Center, Container,  Heading, Text,
     ModalBody,
     ModalCloseButton,
     Button,
-    Box,
+    Center,
+   
   } from '@chakra-ui/react'
   
 
 function Weth() {
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const theme = extendTheme({
-        textStyle: {
-          h1: {
-            // you can also use responsive styles
-            textDecoration: 'underline',
-          },},})
+  
 
 return (
     <VerticalTimelineElement
@@ -36,14 +31,16 @@ return (
     iconStyle={{ background: '#091843', color: '#fff' }}
     icon={< FaEthereum/>}
   >
-
-<h1 className="vertical-timeline-element-title">WETH = ETH</h1>
-    <h2 className="vertical-timeline-element-subtitle">Ethereum </h2>
-        <p>
-            Pour faire simple, un wETH est un ETH emballé (“Wrapped ETH” en Anglais). Mais commençons par présenter ses différents acteurs.
-            <h3>TOUT D’ABORD, IL Y A LE TOKEN ETHER (ETH)</h3>
-            L’Ether, ou ETH, est la monnaie de base construite sur la chaine de blocs (blockchain) Ethereum.</p>
-
+<Center>
+<h2 className="vertical-timeline-element-subtitle"> Wrapped Ethereum</h2>
+</Center>
+<br/>
+<h1 className="vertical-timeline-element-title">wETH ? ETH ? Ethereum ?</h1>
+    <p> Certains le considèrent comme une nouvelle forme d’internet. Ethereum est une plateforme logicielle qui permet de construire des applications décentralisées grâce à des smart contracts (contrats intelligents).
+      Chaque Dapp crée disposent de son propre token, également appelée ERC-20 (token alternatif). L'ETH est quand à lui la monnaie de base sur laquelle est construite la blockchain Ethereum. 
+      de ce fait, Les transactions en ETH ne peuvent s'échanger directement avec des tokens alternatifs. Pour résoudre ce probleme là, la communauté Ethereum à crée un wETH.
+            </p>
+        
 <       div className="buttonTuto">
             <Button  variant='ghost' mt={4} m onClick={onOpen}>
                     En savoir Plus
@@ -54,29 +51,15 @@ return (
       <Modal onClose={onClose} size="lg" isOpen={isOpen}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader> Ethereum </ModalHeader>
+          <ModalHeader> Wrapped ETH </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Text>
-            <p>
-            Pour faire simple, un wETH est un ETH emballé (“Wrapped ETH” en Anglais). Mais commençons par présenter ses différents acteurs.
-            <h3>TOUT D’ABORD, IL Y A LE TOKEN ETHER (ETH)</h3>
-            L’Ether, ou ETH, est la monnaie de base construite sur la chaine de blocs (blockchain) Ethereum.
-
-
-            <h3>ENSUITE VIENNENT LES TOKENS ALTERNATIFS (ALT TOKENS)</h3>
-            Quand une dApp (application décentralisée) est construite depuis la chaine de blocs Ethereum, elle introduit généralement sa propre nouvelle forme de Token. Par exemple, les Token ERC-20, sont un standar dans la création et le trasnfert de token. 
-                </p> <h3>pourquoi Weth et pas ETH</h3> 
-            <p> Car tout simplement que le wETH est de l'Eth. Mais Lorsque nous utilisons une blockchaine different comme Polygon. Nous ne pouvons pas utliser de l'Eth. le wEth résout ce probleme. Il garde les memes caracteristique que l'eth mais en mieux, Il garde également la meme valeur car ce n'est que de l'ETH enveloppé. 
-            </p> <p>pour plus d'information, vous pouvez lire cette petite explication simple </p>
-            <a href="https://www.presse-citron.net/crypto/faq/ethereum/"> <Button colorScheme='teal' size='xs'> Button
-            </Button></a> 
-            <p> <h3>Ethereum c'est quoi?</h3> 
-            Ethereum est une plateforme logicielle qui permet de construire des applications décentralisées grâce à des smart contracts (contrats intelligents). Certains considèrent Ethereum comme une nouvelle forme d’internet.
-            pour plus d'information je vous conseille de lire cette article 
-            </p> <a href="https://www.presse-citron.net/crypto/faq/ethereum/"><Button href="https://www.presse-citron.net/crypto/faq/ethereum/"colorScheme='teal' size='xs'>
-            Button
-            </Button></a>
+         <p></p>
+         <p>C'est un ETH emballé (wrapped eth). Lorsque nous utilisons une Dapp, nous ne pouvons pas utliser de l'Eth. les développeurs d'Ethereum Fundation, 
+           ont crée un wETH, de type ERC-20, afin de pouvoir réaliser ces transactions.  Ce jeton fonctionne en fait comme un "convertisseur" entre les Ethers et les Tokens Alternatifs, 
+           il transforme tout Ether que vous envoyez en un rapport 1: 1. 
+            C'est autrement dit, un stablecoin d'Ether, qui peut ensuite être échangé en tout autre jeton ERC-20 de votre choix.</p>
             </Text>
           </ModalBody>
           <ModalFooter>

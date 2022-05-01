@@ -1,4 +1,3 @@
-import Acceuil from "./Components/Accueil";
 import { Route, Routes } from "react-router-dom";
 import Projet from "./Components/Project";
 import Acc from "./Components/Acc";

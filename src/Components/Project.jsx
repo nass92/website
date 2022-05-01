@@ -9,15 +9,14 @@ import Sandbox from "./5cryptos/Sandbox";
 import Aave from "./5cryptos/Aave";
 import Wbtc from "./5cryptos/wBtc";
 import { Container } from "@chakra-ui/layout";
+import Navbar from "./navbar/navbar";
 
 
 function Projet() {
   return (
     <DesktopRoot>
-<div className="fixed-top ">
-        <NavMenu />
-        </div>
-        <div class='mt-5'>
+
+       
 <VerticalTimeline> 
   <Weth/>
 
@@ -38,7 +37,7 @@ function Projet() {
     icon={<GrValidate/>}
   />
 </VerticalTimeline>
-</div>
+
 </DesktopRoot>
   );
   
