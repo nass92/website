@@ -1,9 +1,9 @@
 import 'react-vertical-timeline-component/style.min.css';
 import {DesktopRoot} from "../../Css/style"
-import { BsGoogle} from "react-icons/bs";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { BsGoogle} from "react-icons/bs";
 import { GrValidate} from "react-icons/gr"
-import { Box, Center, Container, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Box, Center,  Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 import Logo from "../../asset/Logo.png"
 import Moonpay from '../Steptu/Matic';
 import Settoken from '../Steptu/Settoken';
@@ -42,16 +42,16 @@ function StepTu() {
 <VerticalTimelineElement
     
     date={<Heading>Navigateur</Heading>}
-    contentStyle={{ background: '#091843', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  #091843' }}
-    iconStyle={{ background: '#091843', color: '#fff' }}
+    contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
+    contentArrowStyle={{ borderRight: '10px solid rgb(240 239 206) '}}
+    
+    iconStyle={{ background: '#556655', color: '#fff' }}
     icon={<BsGoogle/>}
   >
-      <Container color="white" >
   <Text>
   Assurez-vous d'utiliser Google Chrome, Firefox ou Brave comme navigateur, afin de pouvoir utliser pleinement les fonctionnabilités web3.
   </Text>
-</Container >
+
   </VerticalTimelineElement>
 
     <Metamask />
@@ -71,7 +71,8 @@ function StepTu() {
     
   
     <VerticalTimelineElement
-    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+   
+   iconStyle={{ background: '#556655', color: '#fff' }}
     icon={<GrValidate/>}
   />
 </VerticalTimeline>

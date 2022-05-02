@@ -1,9 +1,10 @@
 import styled from "styled-components/macro";
 
-export const DesktopRoot = styled.div`
-  background-color: #091843;
+export const DesktopRoot = styled.body`
+  background-color: #556655fc;
   margin: 0;
   padding: 0;
+ heiht: 100%;
 `;
 export const EarningsIncrease = styled.h5`
 text-align: center;

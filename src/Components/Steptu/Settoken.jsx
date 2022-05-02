@@ -1,9 +1,9 @@
 
 import 'react-vertical-timeline-component/style.min.css';
-import styled from "styled-components";
 import {GiReceiveMoney} from "react-icons/gi"
 import {  VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import { Container, Heading, Text } from "@chakra-ui/react";
+import { Heading, Text } from "@chakra-ui/react";
+import { useDisclosure } from '@chakra-ui/hooks';
 import {
   Modal,
   ModalOverlay,
@@ -14,7 +14,6 @@ import {
   ModalCloseButton,
   Button
 } from '@chakra-ui/react'
-import { useDisclosure } from '@chakra-ui/hooks';
 
 function Settoken(){
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -22,12 +21,12 @@ return(
 <VerticalTimelineElement
  
         date={<Heading color="white">Mugiwara_index</Heading>}
-    contentStyle={{ background: '#091843', color: '#fff' }}
-    contentArrowStyle={{ border: '7px solid  #091843' }}
-    iconStyle={{ background: '#091843', color: '#fff' }}
+        contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
+        contentArrowStyle={{ borderRight: '10px solid rgb(240 239 206) '}}
+        iconStyle={{ background: '#556655', color: '#fff' }}
     icon={< GiReceiveMoney/>}
   >
-   <Container color="white" >
+   
   <Text>
   TokenSet est la plateforme qui heberge l'index. C'est ici, que vous allez pouvoir investir, le temps d'une integration prochaine sur notre environnement web.
   </Text>
@@ -52,7 +51,7 @@ return(
           </ModalFooter>
         </ModalContent>
       </Modal>
-</Container >
+
   </VerticalTimelineElement>
   )}
 

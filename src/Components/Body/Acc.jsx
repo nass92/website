@@ -1,16 +1,17 @@
+import {DesktopRoot} from "../../Css/style"
+import Fusée from '../navbar/fusée';
+import '../../Css/App.css'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { GrValidate} from "react-icons/gr"
 import { BsInstagram, BsSnapchat,  BsTelegram, BsDiscord} from "react-icons/bs";
-import { Box, Center, Heading, Avatar, Grid, GridItem, Container  } from "@chakra-ui/react";
 import Logo from "../../asset/Logo.png"
 import {VscGraphLine} from "react-icons/vsc"
 import {CgDanger,} from "react-icons/cg"
 import {IoShareSocialSharp} from "react-icons/io5"
 import Api from "../cryptoprice/CoinApi";
 import Navbar from "../navbar/navbar";
-import {DesktopRoot} from "../../Css/style"
-import Fusée from '../navbar/fusée';
+import { Box, Center, Heading, Avatar, Grid, GridItem, Container  } from "@chakra-ui/react";
 function Acc() {
   return (<>
         <Container maxW='3xs' ml="-15px" mr='50px'  className="fixed-top ">
@@ -45,33 +46,51 @@ function Acc() {
   </GridItem>
 </Grid>
 
+
+
+
+
    <VerticalTimelineElement
     
     date={<Heading color="white">Welcome Young Crypto-Sailor</Heading>}
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-    iconStyle={{ background: '#091843', color: '#fff' }}
+    contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
+    contentArrowStyle={{ borderRight: '10px solid rgb(240 239 206) '}}
+  
+    iconStyle={{ background: '#556655', color: '#fff' }}
     icon={<Center ><Avatar size="md"  src={Logo}></Avatar></Center>}
   >
+   <Center>
+<h2 className="vertical-timeline-element-subtitle"> Qu'est ce qu'un Crypto_index ?</h2>
+</Center>
     <p>
-     Nous Vous Souhaitons la bienvenue sur notre nouvelle Index. Cette dernière vous fournira toutes les informations nécessaires concernant le monde de la Crypto-monnaie. 
+    Un Crypto Index est un portfolio défini de cryptomonnaies sélectionnées que vous pouvez acheter, vendre ou swapper en un seul clic, au lieu de passer par l’opération d'achat et de vente de chaque cryptomonnaie individuellement.
+     Il vous permet de diversifier facilement votre portfolio de cryptomonnaies. 
     </p>
   </VerticalTimelineElement>
+
+
+
   <VerticalTimelineElement
     
     date={<Heading>Crypto Market Price</Heading>}
-    contentStyle={{ background: '#091843', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  #091843' }}
-    iconStyle={{ background: '#091843', color: '#fff' }}
+    contentStyle={{ background: '#556655', color: 'rgb(249, 236, 216)' }}
+    contentArrowStyle={{ borderRight: '10px solid rgb(249, 236, 216) '}}
+    
+    iconStyle={{ background: '#556655', color: '#fff' }}
     icon={<VscGraphLine/>}
   >
-    <Container maxW="xs">
+    
    <Api/>
-   </Container>
+
   </VerticalTimelineElement>
+
+
+
   <VerticalTimelineElement
     date= {<Heading>N'oubliez pas.</Heading>}
-    iconStyle={{ background: '#091843', color: '#fff' }}
+    contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
+    contentArrowStyle={{ borderRight: '10px solid rgb(240 239 206) '}}
+    iconStyle={{ background: '#556655', color: '#fff' }}
     icon={< CgDanger/>}
   >
       <h3 className="sous_phrase">Faites attention à votre argent, vous êtes seul décisionnaire de votre futur</h3>
@@ -84,10 +103,10 @@ projets solides dans le secteurs des cryptos-monnaies.</p>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date={<Heading>Découvrez-nous : @Mugiwara_Index</Heading>}
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-    iconStyle={{ background: '#091843', color: '#fff' }}
+    contentStyle={{ background: '#556655', color: 'rgb(249, 236, 216)' }}
+    contentArrowStyle={{ borderRight: '10px solid rgb(249, 236, 216) '}}
+
+    iconStyle={{ background: '#556655', color: '#fff' }}
     icon={<IoShareSocialSharp />}
   > 
   <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
@@ -115,7 +134,8 @@ projets solides dans le secteurs des cryptos-monnaies.</p>
      
   
   <VerticalTimelineElement
-    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+    
+    iconStyle={{ background: '#556655', color: '#fff' }}
     icon={<GrValidate/>}
   />
 

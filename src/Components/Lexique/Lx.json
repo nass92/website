@@ -1,42 +1,47 @@
 [
     {
      "id": 1,
-     "question": "What are the services do you offer",
+     "titre": "Qu'est ce qu'une Crypto-monnaie",
      "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis vitae tempora quod provident tenetur culpa dolore facere? Earum, dolor?"
     },
     {
      "id": 2,
-     "question": "what are our preferred method of payment",
+     "titre": "Qu'est ce qu'une Blockchain",
      "answer": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto iusto veniam eveniet labore impedit nam"
     },
     {
      "id": 3,
-     "question": "Are your services beginners friendly",
+     "titre": "Un mineur, c'est quoi?",
      "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores,"
     },
     {
      "id": 4,
-     "question": "what how does it take to upgrade a package",
+     "titre": "Smart Contrat, les contrats 2.0 ",
      "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
     },
     {
      "id": 5,
-     "question": "Where are your offices located around the world",
+     "titre": "ERC-20 / Token",
      "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
     },
     {
         "id": 6,
-        "question": "Where are your offices located around the world",
+        "titre": "Et les NFT ?",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
        },
        {
         "id": 7,
-        "question": "Where are your offices located around the world",
+        "titre": "Les Dapps et le web3 dans tout sa ?",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
        },
        {
         "id": 8,
-        "question": "Where are your offices located around the world",
+        "titre": "Defi => La Finance pour tous",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
+       },
+       {
+        "id": 8,
+        "titre": "Play to Earn...What?",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
        }
 

@@ -1,10 +1,9 @@
-import { Container } from '@chakra-ui/react'
 import React from 'react'
 import '../../Css/CoinApi.css'
 
 const Coin = ({  image, symbol, price,  priceChange, marketcap }) => {
   return (<>
-    <Container ml="-55px" maxW="3xs">
+    <div className='coin-container'>
       <div className="coin-row">
         <div className="coin">
           <img src={image} alt="crypto" />
@@ -21,7 +20,7 @@ const Coin = ({  image, symbol, price,  priceChange, marketcap }) => {
         </div>
       </div>
 
-      </Container>
+      </div>
 </>)
 }
 

@@ -12,9 +12,11 @@ import './Css/nav.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ChakraProvider>
+    <ChakraProvider >
       <Router>
+   
     <App />
+  
     </Router>
     </ChakraProvider>
   </React.StrictMode>

@@ -1,6 +1,7 @@
 import 'react-vertical-timeline-component/style.min.css';
-import { BsCurrencyEuro, } from "react-icons/bs";
 import {VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { useDisclosure } from '@chakra-ui/hooks';
+import { BsCurrencyEuro, } from "react-icons/bs";
 import {Container, Heading, Text } from "@chakra-ui/react";
 import {
   Modal,
@@ -12,7 +13,7 @@ import {
   ModalCloseButton,
   Button
 } from '@chakra-ui/react'
-import { useDisclosure } from '@chakra-ui/hooks';
+
 
 function Moonpay() {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -20,9 +21,9 @@ function Moonpay() {
         <VerticalTimelineElement
     
         date={<Heading>Buy $Matic</Heading>}
-        contentStyle={{ background: '#091843', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  #091843' }}
-        iconStyle={{ background: '#091843', color: '#fff' }}
+        contentStyle={{ background: '#556655', color: 'rgb(249, 236, 216)' }}
+        contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
+        iconStyle={{ background: '#556655', color: '#fff' }}
         icon={<BsCurrencyEuro/>}
         
       >

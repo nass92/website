@@ -1,14 +1,15 @@
-import { HamburgerIcon } from '@chakra-ui/icons';
-import { Box, Button} from '@chakra-ui/react';
-import {
+import { BsBank } from 'react-icons/bs';
+import { MdOutlineOndemandVideo } from 'react-icons/md';
+import { RiExchangeDollarFill, RiQuestionnaireLine } from 'react-icons/ri';
+import{TiThMenuOutline} from 'react-icons/ti'
+import{BiBookReader} from 'react-icons/bi'
+import { Box, 
+  Button,
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
 } from '@chakra-ui/react'
-import { BsBank } from 'react-icons/bs';
-import { MdOutlineOndemandVideo } from 'react-icons/md';
-import { RiExchangeDollarFill, RiQuestionnaireLine } from 'react-icons/ri';
 
 
 
@@ -48,8 +49,18 @@ function Navbar() {
         </a>
       </li>
 
+
+
+      <li class="nav-item"c className="mL4"> 
+        <a href="lexique" class="nav-link ">
+        <BiBookReader class="svg-inline--fa fa-space-station-moon-alt fa-w-16 fa-5x fa-secondary"/>
+          <span class="link-text"> Lexique</span>
+        </a>
+      </li> 
+
+
       <li class="nav-item">
-        <a href="projet" class="nav-link mL">
+        <a href="projet" class="nav-link mL2">
           <svg
             aria-hidden="true"
             focusable="false"
@@ -77,6 +88,8 @@ function Navbar() {
         </a>
       </li>
 
+
+
       <li class="nav-item">
         <a href="steptuto" class="nav-link">
         <MdOutlineOndemandVideo class="svg-inline--fa fa-space-station-moon-alt fa-w-16 fa-5x fa-secondary" />
@@ -85,15 +98,10 @@ function Navbar() {
       </li>
 
       
-      <li class="nav-item">
-        <a href="FAQ" class="nav-link">
-        <RiQuestionnaireLine class="svg-inline--fa fa-space-station-moon-alt fa-w-16 fa-5x fa-secondary"/>
-          <span class="link-text"> FAQ</span>
-        </a>
-      </li> 
+     
       
       
-      <li class="nav-item">
+      <li class="nav-item" className="mL">
         <a href="https://www.moonpay.com/buy" class="nav-link mL">
         <RiExchangeDollarFill class="svg-inline--fa fa-space-station-moon-alt fa-w-16 fa-5x fa-secondary"/>
           <span class="link-text">$Matic</span>
@@ -105,9 +113,7 @@ function Navbar() {
       <div class="nav-link" >
       <Menu  >
        
-  <MenuButton className="mB" aria-label='Options'   as={Button} size="xs" icon={<HamburgerIcon class="svg-inline--fa fa-space-station-moon-alt  "  variant='outline'  />} />
-
-
+  <MenuButton className="mL3" aria-label='Options'   as={Button} size="xs" icon={<TiThMenuOutline />} />
   <span class="link-text">Investissement</span>
   <MenuList>
   <a href="https://www.moonpay.com/buy" ><MenuItem icon={ <RiExchangeDollarFill />} >Buy $Matic</MenuItem></a>

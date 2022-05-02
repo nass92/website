@@ -11,6 +11,7 @@ import {Text,
     ModalBody,
     ModalCloseButton,
     Button,
+    Center,
 
   } from '@chakra-ui/react'
   
@@ -24,17 +25,21 @@ return (
     <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="Aave Protocol"
-
-    iconStyle={{ background: '#091843', color: '#fff' }}
+    contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
+    iconStyle={{ background: '#556655', color: '#fff' }}
     icon={< GiBank/>}
   >
 
-<h1 className="vertical-timeline-element-title">AAVE</h1>
-    <h2 className="vertical-timeline-element-subtitle">DeFi</h2>
-    <p> <h3> la Defi c'est quoi ? </h3>
-      La Defi (finance décentralisée), à révolutionner le secteur de la finance. 
+<Center>
+<h2 className="vertical-timeline-element-subtitle"> AAVE</h2>
+</Center>
+<br/>
+<h1 className="vertical-timeline-element-title">La Finance Décentralisée, vrai revolution?</h1>
+    <p> 
+      La Defi (finance décentralisée), à boulverser ce secteur. 
       La finance décentralisée ou DeFi est un moyen d'échanger, d'acheter et de vendre avec peu d'intermédiaires et donc par théorie, 
-      d'éviter les fonds bloqués ou des frais non prévus à la base ou toute autre action qui impacterait les finances des propriétaires de fonds. 
+      d'éviter les fonds bloqués ou des frais non prévus à la base ou toute autre action qui impacterait les finances des propriétaires de fonds.
+      
     </p>
     <div className="buttonTuto">
             <Button  variant='ghost' mt={4} m onClick={onOpen}>
@@ -51,10 +56,9 @@ return (
           <ModalBody>
             <Text>
             <p> <h3> la Defi c'est quoi ? </h3>
-      La Defi (finance décentralisée), à révolutionner le secteur de la finance. 
-      La finance décentralisée ou DeFi est un moyen d'échanger, d'acheter et de vendre avec peu d'intermédiaires et donc par théorie, 
-      d'éviter les fonds bloqués ou des frais non prévus à la base ou toute autre action qui impacterait les finances des propriétaires de fonds. 
-    </p>
+            L’objectif de la finance décentralisée est de permettre la transmission de valeur et la création d’une finance pour tous et sans intermédiaire comme peuvent l’être les banques ou les plateformes d’échange.
+La DeFi permet à n’importe qui d’obtenir des prêts. C’est un système totalement décentralisés pour les emprunteurs et il n’est pas possible qu’un prêt vous soit refusé. Il vous suffit d’avoir un accès à internet.
+Cela permet également aux prêteurs de faire travailler leur argent avec des taux d’intérêts décents ! </p>
     <p>
         <h3>Et AAVE ?</h3>
         Aave est un protocole open-source de finance décentralisée qui permet à n’importe qui de prêter et d’emprunter des cryptomonnaies. 

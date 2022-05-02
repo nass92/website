@@ -13,6 +13,7 @@ import { Text,
     Button,
     Center,
    
+   
   } from '@chakra-ui/react'
   
 
@@ -24,18 +25,18 @@ return (
     <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date=" Wrapped Ethereum"
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentStyle={{ background: '#556655', color: 'rgb(249, 236, 216)' }}
+    contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
     
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
     
-    iconStyle={{ background: '#091843', color: '#fff' }}
+    iconStyle={{ background: '#556655', color: '#fff' }}
     icon={< FaEthereum/>}
   >
 <Center>
 <h2 className="vertical-timeline-element-subtitle"> Wrapped Ethereum</h2>
 </Center>
 <br/>
-<h1 className="vertical-timeline-element-title">wETH ? ETH ? Ethereum ?</h1>
+<Text  className="vertical-timeline-element-title">wETH ? ETH ? Ethereum ?</Text>
     <p> Certains le considèrent comme une nouvelle forme d’internet. Ethereum est une plateforme logicielle qui permet de construire des applications décentralisées grâce à des smart contracts (contrats intelligents).
       Chaque Dapp crée disposent de son propre token, également appelée ERC-20 (token alternatif). L'ETH est quand à lui la monnaie de base sur laquelle est construite la blockchain Ethereum. 
       de ce fait, Les transactions en ETH ne peuvent s'échanger directement avec des tokens alternatifs. Pour résoudre ce probleme là, la communauté Ethereum à crée un wETH.

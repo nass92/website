@@ -1,8 +1,9 @@
-body{
-  background-color: #091843;
-  margin:0;
-  padding:0;
+* {
+	margin: 0;
+	padding: 0;
+	
 }
+
 .coin-percent {
   width:110px;
 }

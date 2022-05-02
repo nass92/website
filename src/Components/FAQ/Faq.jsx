@@ -1,47 +1,59 @@
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component/dist-modules'
+import { DesktopRoot } from '../../Css/style'
+import Navbar from '../navbar/navbar'
+import question from"./faqq.json"
+import FFaq from './Ffaq'
+import { FaQuestion } from 'react-icons/fa'
 import {
     Accordion,
     AccordionItem,
-    AccordionButton,
-    AccordionPanel,
-    AccordionIcon,
-    Box,
     Container,
     Heading,
-    Text,
     Center,
-  } from '@chakra-ui/react'
-import { DesktopRoot } from '../../Css/style'
-import Navbar from '../navbar/navbar'
+  } 
+  from '@chakra-ui/react'
 
-import question from"./faqq.json"
   function Faq() {
-      return( <DesktopRoot>
-          <Container  ml="-15px"  className="fixed-top ">
+
+    
+      return(  <>
+      
+     
+      <DesktopRoot>
+    <Container maxW='3xs' ml="-15px" mr='50px'  className="fixed-top ">
         <Navbar/>
         </Container>
-       
-          <Heading mt="10%" ><Center> Frequently Asked Questions</Center>  </Heading>
-          <Container maxW="8xl"  position="center" mt="8%">
-        <Accordion defaultIndex={[0]} allowMultiple>
-        {question.map((question) =>(
-  <AccordionItem color="white" key={question.id}>
-  <h2>
-    <AccordionButton>
-      <Box flex='1' textAlign='left'>
-       <Text fontSize="30px"> {question.question} </Text>
-      </Box>
-      <AccordionIcon />
-    </AccordionButton>
-  </h2>
-  <AccordionPanel pb={4} color="white">
-   {question.answer}
-  </AccordionPanel>
-</AccordionItem>
-      ))}
+        <Center> 
+        <Heading  >Frequently Asked Questions </Heading></Center> 
+        <VerticalTimeline>
+         
+         
+
+         
+            
+        <Accordion >
+
+        {question.map(( question) =>(
+         <VerticalTimelineElement
+         className="vertical-timeline-element--work"
+         date="Aave Protocol"
+         contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
+         iconStyle={{ background: '#556655', color: '#fff' }}
+         icon={<FaQuestion/>}
+       >
+     
+         <AccordionItem  >
+                <FFaq key={question.id} question = {question}/>
+                </AccordionItem  >
+                </VerticalTimelineElement>
+        ))}
 
       </Accordion>
-      </Container>
+      </VerticalTimeline>
       </DesktopRoot>
+
+
+     </>
       
       )
   }
