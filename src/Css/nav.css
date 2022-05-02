@@ -130,7 +130,7 @@
 
   .navbar-nav {
     flex-direction: row;
-    
+    margin-left: 6%;
     
   }
 
@@ -148,6 +148,17 @@
   }
 }
 
+/*medium screen */
+@media only screen and (min-width: 450px) and (max-width:1500px) {
+
+  .navbar-nav{
+   
+    margin-left: 20%; }
+  .nav-link {
+    justify-content: center;
+    
+  }
+}
 /* Large screens */
 @media only screen and (min-width: 1500px) {
   .navbar {
@@ -155,8 +166,13 @@
     width: 3rem;
     height: 100vw;
     justify-content:inherit ;
+    align-items: center;
   }
-
+.nav-bar{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
   .navbar:hover {
     width: 20rem;
   }

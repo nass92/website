@@ -2,17 +2,19 @@
     {
      "id": 1,
      "titre": "Qu'est ce qu'une Crypto-monnaie",
-     "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis vitae tempora quod provident tenetur culpa dolore facere? Earum, dolor?"
+     "answer": "Lorsque vous faite un achat sur internet, vous utilisez plusieurs intermédiaire. Votre carte (visa ou mastercard), votre banque (BNP, SG, LCL ...), le service de paiement sur le site (strype, square, paypal...) puis viens la banque du vendeur. grâce à la crypto-monnaie, tout ces intermédiares sont supprimés. en faisant un achat en BTC par exmple, le seul intermédiaire est le mineur qui valide l'envoie et inscrit la transaction  sur la blockchain."
     },
     {
      "id": 2,
      "titre": "Qu'est ce qu'une Blockchain",
-     "answer": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto iusto veniam eveniet labore impedit nam"
+     "answer": "tout d'abord, il faut le visualiser tels un livre de comptable, avec une entrée (from, celui qui envoie), une sorti (to, celui qui reçoit), numéro d'identifiant (N° de hash, chaque transaction disposent de sont propre id), la tache éxécuté(un envoie, un échange, un achat, création d'un contrat ...) la valeur envoyée et les frais de transaction payée. Toute action faite, y est inscrite. elle fonctionne grâce a des serveurs, tournant 24/24h, qui éxécutent, valide, et inscrit ces actions dans un block. Une fois, le block plein et validée, il est ajouter au précend ce qui forme un chaine de block (blockchain). ce systéme, permet une résistance à la censure. Aucune modification, ou suppression, n'est possible, une fois la transaction inscrite. deplus, une blockchain, fonctionne généralement de façon décentralisée, c'est à dire que ce n'est pas une entité seul qui la gouverne, mais toutes les personne qui participent a son fonctionnement. "
+      
+     
     },
     {
      "id": 3,
      "titre": "Un mineur, c'est quoi?",
-     "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores,"
+     "answer": "Un mineur est une personne disposant d'un ordinateur (pour le btc ce sont des asics) qui va rendre une transaction viable, et par le meme temps contribuer à la sécurité du réseaux.  Pour cela, le mineur (ou plus tot l'ordinateur du mineur) doit résoudre un algorithme complexe.  Une fois la transaction confirmé, le mineur perçoit les frais de transaction payé par l'éméteur (celui qui envoie). Mais le plus interréssant pour un mineur est la validation d'un block. lorsque celui-ci y parvient, alors il percoit une récompense en cryptomonnaie. Il faut garder à l'esprit que les mineurs sont tous en concurrence, afin d'etre celui qui valident le prochain block. Pour le BTC par exemple, la recompense par block est de 6.25btc aujourd'huit. "
     },
     {
      "id": 4,

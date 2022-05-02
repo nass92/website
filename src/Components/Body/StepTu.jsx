@@ -3,14 +3,18 @@ import {DesktopRoot} from "../../Css/style"
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import { BsGoogle} from "react-icons/bs";
 import { GrValidate} from "react-icons/gr"
-import { Box, Center,  Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Box, Center,  Container,  Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 import Logo from "../../asset/Logo.png"
 import Moonpay from '../Steptu/Matic';
 import Settoken from '../Steptu/Settoken';
 import Metamask from '../Steptu/Metamask';
 import Fusée from '../navbar/fusée';
+import Navbar from '../navbar/navbar';
 function StepTu() {
-  return (
+  return (<>
+    <Container maxW='3xs' ml="-15px" mr='50px'  className="fixed-top ">
+    <Navbar/>
+    </Container>
     <DesktopRoot>
     
   
@@ -77,6 +81,7 @@ function StepTu() {
   />
 </VerticalTimeline>
 </DesktopRoot>
+</>
   );
 }
 
