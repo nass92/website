@@ -7,7 +7,7 @@
     {
      "id": 2,
      "titre": "Qu'est ce qu'une Blockchain",
-     "answer": "tout d'abord, il faut le visualiser tels un livre de comptable, avec une entrée (from, celui qui envoie), une sorti (to, celui qui reçoit), numéro d'identifiant (N° de hash, chaque transaction disposent de sont propre id), la tache éxécuté(un envoie, un échange, un achat, création d'un contrat ...) la valeur envoyée et les frais de transaction payée. Toute action faite, y est inscrite. elle fonctionne grâce a des serveurs, tournant 24/24h, qui éxécutent, valide, et inscrit ces actions dans un block. Une fois, le block plein et validée, il est ajouter au précend ce qui forme un chaine de block (blockchain). ce systéme, permet une résistance à la censure. Aucune modification, ou suppression, n'est possible, une fois la transaction inscrite. deplus, une blockchain, fonctionne généralement de façon décentralisée, c'est à dire que ce n'est pas une entité seul qui la gouverne, mais toutes les personne qui participent a son fonctionnement. "
+     "answer": "Tout d'abord, il faut la visualiser tels un livre de comptable, avec une entrée (from, celui qui envoie), une sorti (to, celui qui reçoit), numéro d'identifiant (N° de hash, chaque transaction disposent de sont propre id), la tache éxécuté(un envoie, un échange, un achat, création d'un contrat ...) la valeur envoyée et les frais de transaction payée. Toute action faite, y est inscrite. elle fonctionne grâce a des serveurs, tournant 24/24h, qui éxécutent, valide, et inscrit ces actions dans un block. Une fois, le block plein et validée, il est ajouter au précend ce qui forme un chaine de block (blockchain). ce systéme, permet une résistance à la censure. Aucune modification, ou suppression, n'est possible, une fois la transaction inscrite. deplus, une blockchain, fonctionne généralement de façon décentralisée, c'est à dire que ce n'est pas une entité seul qui la gouverne, mais toutes les personne qui participent a son fonctionnement. "
       
      
     },
@@ -19,7 +19,8 @@
     {
      "id": 4,
      "titre": "Smart Contrat, les contrats 2.0 ",
-     "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
+     "answer": "Les smart contracts, ou contrats intelligents, sont des programmes informatiques irrévocables, le plus souvent déployés sur une blockchain, qui exécutent un ensemble d’instructions pré-définies. L’idée maîtresse derrière ce concept, est de garantir la force obligatoire des contrats non plus par le droit, mais directement par le code informatique. Le smart contract propose en quelque sorte un équivalent informatique du contrat papier. Durant son exécution , toutes les étapes de validation sont enregistrées dans la blockchain. Ce procédé permet de sécuriser l’ensemble des données en empêchant leur modification ou leur suppression a posteriori. Les conditions sont très clairement fixées et l’interprétation du code est sans équivoque, contrairement à l’interprétation humaine, qui laisse toujours place à la négociation ou à la découverte d’un vide juridique. Les avantages du smart contract sont multiples. Ces derniers permettent de, Sécuriser un accord entre deux parties (ou davantage), Automatiser le paiement et éliminer les risques d’impayés, Diminuer drastiquement les coûts intermédiaires dans l’élaboration, Mais aussi, le suivi et la passation d’un contrat (notaire, avocat). Plusieurs blockchains laissent la possibilité de déployer des smart contracts. la plus connue, à ce jour, est Ethereum; qui comprend déjà un grand nombre d’applications décentralisées programmées via contrats intelligents. On en retrouve plusieurs types selon les secteurs d’activités; Echanges monétaires décentralisés (0x, OmiseGo, MakerDAO), Jeux sur Blockchain ( Cryptokitties, My Crypto Heroes, Etheremon ), Cloud décentralisé (Storj, iEx.ec), Plateformes de marchés prédictifs : (Augur, Gnosis)."
+
     },
     {
      "id": 5,
@@ -42,7 +43,7 @@
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
        },
        {
-        "id": 8,
+        "id": 9,
         "titre": "Play to Earn...What?",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
        }

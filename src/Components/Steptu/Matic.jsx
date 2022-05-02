@@ -39,7 +39,7 @@ function Moonpay() {
           </div>
       <Modal  isOpen={isOpen} onClose={onClose}>
             <ModalOverlay />
-            <ModalContent bg={"gray.700"}>
+            <ModalContent bg={"#585e508f"}>
               <ModalHeader color="gray.300">MoonPay for EUR/MATIC</ModalHeader>
               <ModalCloseButton />
               <ModalBody>
@@ -49,7 +49,7 @@ function Moonpay() {
     
               <ModalFooter>
                
-                <Button >Moonpay</Button>
+               <a href="https://www.moonpay.com/buy"> <Button variant='ghost' >Moonpay</Button></a>
               </ModalFooter>
             </ModalContent>
           </Modal>

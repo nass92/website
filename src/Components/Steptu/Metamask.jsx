@@ -43,7 +43,7 @@ function Metamask() {
       </div>
       <Modal  isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent bg={"gray.700"}>
+        <ModalContent bg={"#585e508f"}>
           <ModalHeader color="gray.400" ><Center> MetaMask Wallet </Center> </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
@@ -52,7 +52,7 @@ function Metamask() {
           </ModalBody>
 
           <ModalFooter>
-          <Button variant='ghost'>Metamask</Button>
+          <a href="https://metamask.io/download/"> <Button variant='ghost' >Metamask</Button></a>
           </ModalFooter>
         </ModalContent>
       </Modal>

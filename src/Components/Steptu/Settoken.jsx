@@ -2,7 +2,7 @@
 import 'react-vertical-timeline-component/style.min.css';
 import {GiReceiveMoney} from "react-icons/gi"
 import {  VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import { Heading, Text } from "@chakra-ui/react";
+import { Center, Heading, Text } from "@chakra-ui/react";
 import { useDisclosure } from '@chakra-ui/hooks';
 import {
   Modal,
@@ -37,8 +37,8 @@ return(
       </div>
   <Modal  isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent bg={"gray.700"}>
-          <ModalHeader color="gray.300">TokenSet for Mugiwara_index</ModalHeader>
+        <ModalContent bg={"#585e508f"}>
+          <ModalHeader color="gray.300"><Center>TokenSet for Mugiwara_index </Center></ModalHeader>
           <ModalCloseButton />
           <ModalBody>
           <video controls boxSize='10%' position="relative" src='https://nass.mypinata.cloud/ipfs/QmRiqwRfFcCUzfYddzmmozmZHxQzakAWyJZ4PWBEquRK5s' type ="video/mp4" alt='Dan Abramov' />
@@ -47,7 +47,7 @@ return(
 
           <ModalFooter>
            
-            <a href="https://www.tokensets.com/v2/set/polygon/0x14e3B2eF956DC91421bC774E110292A0Ce9798e0"><Button >Mugiwara_Index</Button></a>
+            <a href="https://www.tokensets.com/v2/set/polygon/0x14e3B2eF956DC91421bC774E110292A0Ce9798e0"><Button variant='ghost' >Mugiwara_Index</Button></a>
           </ModalFooter>
         </ModalContent>
       </Modal>
