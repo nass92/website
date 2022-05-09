@@ -20,7 +20,7 @@ function Settoken(){
 return(
 <VerticalTimelineElement
  
-        date={<Heading color="white">Mugiwara_index</Heading>}
+        date={<Text color="blue" fontSize='6xl'>Mugiwara_index</Text>}
         contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
         contentArrowStyle={{ borderRight: '10px solid rgb(240 239 206) '}}
         iconStyle={{ background: '#556655', color: '#fff' }}

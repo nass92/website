@@ -8,8 +8,7 @@ import {
     Accordion,
     AccordionItem,
     Container,
-    Heading,
-    Center,
+  Box
   } 
   from '@chakra-ui/react'
 
@@ -23,12 +22,17 @@ import {
     <Container maxW='3xs' ml="-15px" mr='50px'  className="fixed-top ">
         <Navbar/>
         </Container>
-        <Center> 
-        <Heading  >Frequently Asked Questions </Heading></Center> 
+       
+
         <VerticalTimeline>
          
          
+        <Box maxW='md'ml="35px" mt="-20px" mb="20px" > 
+  <h2 className="phrase"> Frequently Asked Questions</h2>
+  
+ 
 
+  </Box>
          
             
         <Accordion >

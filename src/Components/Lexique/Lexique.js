@@ -12,6 +12,7 @@ import {
   Heading,
   Accordion,
   AccordionItem,
+  Box,
 
 } from '@chakra-ui/react'
 import { BiBookReader } from 'react-icons/bi';
@@ -23,10 +24,14 @@ return (
         <Navbar/>
         </Container>
     
-        <Center> 
-        <Heading  >Le Lexique de la Blockchain</Heading></Center> 
+       
         <VerticalTimeline>
-         
+        <Box maxW='md' ml="35px" mt="-20px" mb="20px"> 
+  <h2 className="phrase"> Le Lexique de la Blockchain</h2>
+  
+ 
+
+  </Box>
 
     
 <Accordion defaultIndex={[0]} allowMultiple>
@@ -34,9 +39,9 @@ return (
 {titre.map(( titre) =>(
  <VerticalTimelineElement
  className="vertical-timeline-element--work"
- date="Aave Protocol"
+ date=""
  contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
- iconStyle={{ background: '#556655', color: '#fff' }}
+ iconStyle={{ background: '#091843', color: '#fff' }}
  icon={<BiBookReader/>}
 >
 

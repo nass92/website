@@ -20,7 +20,8 @@ function Moonpay() {
     return(
         <VerticalTimelineElement
     
-        date={<Heading>Buy $Matic</Heading>}
+        date={<Heading color="white">Buy $Matic</Heading>}
+        dateClassName="date"
         contentStyle={{ background: '#556655', color: 'rgb(249, 236, 216)' }}
         contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
         iconStyle={{ background: '#556655', color: '#fff' }}
@@ -43,7 +44,7 @@ function Moonpay() {
               <ModalHeader color="gray.300">MoonPay for EUR/MATIC</ModalHeader>
               <ModalCloseButton />
               <ModalBody>
-              <video controls boxSize='10%' position="relative" src='https://nass.mypinata.cloud/ipfs/QmRiqwRfFcCUzfYddzmmozmZHxQzakAWyJZ4PWBEquRK5s' type ="video/mp4" alt='Dan Abramov' />
+              <video controls boxSize='10%' position="relative" src='https://nass.mypinata.cloud/ipfs/QmX1tFGgUCTNdoh2ZYbTLYse4DH4hpddNBXBWBw4tAj8pb' type ="video/mp4" alt='Dan Abramov' />
       
               </ModalBody>
     

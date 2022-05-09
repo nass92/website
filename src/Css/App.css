@@ -15,9 +15,9 @@
 }
 
 .titre{
-  font-family: Apple Chancery, cursive;
-  font-size: 40px;
-  text-decoration: underline;
+  font-family:Georgia, serif;
+  font-size: 35px;
+  font-style: italic;
   color: blanchedalmond;
   
 }
@@ -29,8 +29,8 @@
 }
 .phrase{
   font-family:Georgia, serif;
-  font-size: 23px;
-  margin-top: 40px;
+  font-size: 21px;
+  margin-top: 15px;
   font-style: italic;
   color:blanchedalmond
 }
