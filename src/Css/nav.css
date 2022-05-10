@@ -146,6 +146,17 @@
   }
 }
 
+@media only screen and (max-width: 1100px){
+  .navbar .mL3  {
+    margin-top: -15px;
+    margin-left:50px
+  }
+  .navbar .ml5{
+    margin-bottom: 25px;
+  }
+
+}
+
 /*medium screen */
 @media only screen and (min-width: 450px) and (max-width:1500px) {
 

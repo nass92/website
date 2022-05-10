@@ -26,9 +26,11 @@ function Acc() {
   <Box maxW='md' p='4' color='white' ml='30px' mt="15px">
   <Center>
   <img src={Logo}  alt="Logo Chapeau de paille" />
+  <br/>
+  <h1 className="titre">Mugiwara_Index</h1>
   </Center>
 
-  <h1 className="titre">Mugiwara_Index</h1>
+  
   </Box>
   </GridItem>
   <GridItem colStart={[1,3,4]} colEnd={[1,3,4]}   >

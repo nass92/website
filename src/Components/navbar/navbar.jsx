@@ -50,6 +50,13 @@ function Navbar() {
       </li>
 
 
+      <li class="nav-item" className="mL">
+        <a href="/" class="nav-link mL">
+       
+          <span class="link-text">Acceuil</span>
+        </a>
+      </li> 
+
 
       <li class="nav-item"c className="mL4"> 
         <a href="lexique" class="nav-link ">
@@ -62,7 +69,7 @@ function Navbar() {
       <li class="nav-item">
         <a href="projet" class="nav-link mL2">
 
-          <span class="link-text">5 Crypto</span>
+          <span class="link-text">Cryptos</span>
         </a>
       </li>
 
@@ -71,28 +78,17 @@ function Navbar() {
       <li class="nav-item">
         <a href="steptuto" class="nav-link">
       
-          <span class="link-text">Tuto</span>
+          <span class="link-text">Tutoriel</span>
         </a>
       </li>
-
-      
-     
-      
-      
-      <li class="nav-item" className="mL">
-        <a href="https://www.moonpay.com/buy" class="nav-link mL">
-       
-          <span class="link-text">$Matic</span>
-        </a>
-      </li> 
       
       
       <li class="nav-item">
       
-      <Menu  >
+      <Menu >
        
   <MenuButton className="mL3" aria-label='Options'   as={Button} size="xs" bg="dark" />
-  <span class="link-text">Investissement</span>
+  <span className="link-text ml5 ">Investissement</span>
   <MenuList>
   <a href="https://www.moonpay.com/buy" ><MenuItem icon={ <RiExchangeDollarFill />} >Buy $Matic</MenuItem></a>
     <a href="https://www.moonpay.com/buy" ><MenuItem icon={<BsBank/>}> Invest In M_Index</MenuItem></a>
