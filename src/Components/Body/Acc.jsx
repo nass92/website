@@ -21,28 +21,28 @@ function Acc() {
 
 
     <VerticalTimeline>
-
-
-<Grid templateColumns='repeat(3)'  gap={4}>
+    <Grid templateColumns='repeat(3)' >
   <GridItem colSpan={2} >
   <Box maxW='md' p='4' color='white' ml='30px' mt="15px">
   <Center>
   <img src={Logo}  alt="Logo Chapeau de paille" />
   </Center>
+
   <h1 className="titre">Mugiwara_Index</h1>
   </Box>
   </GridItem>
-
+  <GridItem colStart={[1,3,4]} colEnd={[1,3,4]}   >
+  <Box p='4'ml='30px' mt="15px"> 
   <Center>
-  <Box maxW='md' ml="29px"  > 
-  <h2 className="phrase"> Voici comment comprendre, analyser et entrer dans le monde de la crypto-monnaie</h2>
-  
- 
+  <Box maxW='md' p='4'  > 
 
+  <h2 className="phrase"> Voici comment comprendre, analyser et entrer dans le monde de la crypto-monnaie</h2>
   </Box>
   </Center>
-
+   </Box>
+  </GridItem>
 </Grid>
+
 
 
 

@@ -1,10 +1,10 @@
-
-
 .navbar {
   position: inherit;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
-  margin-right: 50px;
+
+  background-color: #6c776c2e;
+
 }
 
 .navbar-nav {
@@ -46,7 +46,7 @@
 }
 
 .link-text {
-  display: none;
+
   margin-left: 1rem;
   color: #279423;
 }
@@ -139,9 +139,7 @@
     
   }
 
-  .navbar:hover .link-text {
-    display:none;
-  }
+ 
 
   main {
     margin: 0;
@@ -163,7 +161,7 @@
 @media only screen and (min-width: 1500px) {
   .navbar {
     top: 0;
-    width: 3rem;
+    width: 13rem;
     height: 100vw;
     justify-content:inherit ;
     align-items: center;
