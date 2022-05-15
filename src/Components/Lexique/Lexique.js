@@ -25,23 +25,25 @@ return (
         </Container>
     
        
-        <VerticalTimeline>
-        <Box maxW='md' ml="35px" mt="-20px" mb="20px"> 
-  <h2 className="phrase"> Le Lexique de la Blockchain</h2>
-  
- 
+        <VerticalTimeline lineColor="black">
+         
 
-  </Box>
 
     
 <Accordion defaultIndex={[0]} allowMultiple>
+<Box maxW='md' ml="35px" mt="-20px" mb="20px"> 
+        <Center>
+  <h2 className="phrase"> Le Lexique de la Blockchain</h2>
+  </Center>
+  </Box>
 
 {titre.map(( titre) =>(
  <VerticalTimelineElement
  className="vertical-timeline-element--work"
  date=""
- contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
- iconStyle={{ background: '#091843', color: '#fff' }}
+ contentStyle={{ background: '#000000', color: '#ffffff', fontFamily:'inter' }}
+ contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
+ iconStyle={{ background: '#000000', color: '#ffffff' }}
  icon={<BiBookReader/>}
 >
 

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700;8..144,800&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -15,12 +18,13 @@
 }
 
 .titre{
-  font-family:Georgia, serif;
-  font-size: 35px;
-  font-style: italic;
-  color: blanchedalmond;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 55px;
+  
+  color: rgb(0, 0, 0);
   
 }
+
 .sous-titre {
   margin: 20px 0px;
   text-align: center;
@@ -28,11 +32,11 @@
   color: rgb(190, 189, 189);
 }
 .phrase{
-  font-family:Georgia, serif;
+  font-family: 'Inter, sans-sherif';
   font-size: 21px;
   margin-top: 15px;
   font-style: italic;
-  color:blanchedalmond
+  color:rgb(0, 0, 0)
 }
 .sous_phrase{
   font-family:Georgia, serif;
@@ -71,4 +75,21 @@ justify-content: flex-end;
 .buttonTuto{
   display: flex;
 justify-content: flex-end;
+}
+.inter{
+  font-family: 'Inter, sans-sherif';
+}
+
+#subtitle {
+  
+  color: white;
+  font-size: 25px;
+  margin-top: -15px;
+  font-style: italic;
+}
+#subtitleLexique{
+  color: white;
+  font-size: 22px;
+  margin-top: -5px;
+  
 }

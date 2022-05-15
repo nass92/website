@@ -2,7 +2,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import {VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import { useDisclosure } from '@chakra-ui/hooks';
 import { BsCurrencyEuro, } from "react-icons/bs";
-import {Container, Heading, Text } from "@chakra-ui/react";
+import {Center, Container, Heading, Text } from "@chakra-ui/react";
 import {
   Modal,
   ModalOverlay,
@@ -20,15 +20,18 @@ function Moonpay() {
     return(
         <VerticalTimelineElement
     
-        date={<Heading color="white">Buy $Matic</Heading>}
+       
         dateClassName="date"
-        contentStyle={{ background: '#556655', color: 'rgb(249, 236, 216)' }}
+        contentStyle={{ background: '#000000', color: '#ffffff', }}
         contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
-        iconStyle={{ background: '#556655', color: '#fff' }}
+        iconStyle={{ background: '#000000', color: '#ffffff', borderColor:"#00000" }}
+        iconClassName="red"
         icon={<BsCurrencyEuro/>}
         
       >
-        <Container color="white" >
+        <Center>
+  <Text id="subtitle">MoonPay</Text>
+  </Center>
       <Text>
       Pour investir dans l'index, échangé vos euro avec des $Matic, la crypto-monnaie du réseaux Polygon. 
           Passer par moonpay pour pour une transaction simple par cb. 
@@ -55,7 +58,7 @@ function Moonpay() {
             </ModalContent>
           </Modal>
           
-    </Container >
+   
       </VerticalTimelineElement>
     )
 }

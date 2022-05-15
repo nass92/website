@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 
 export const DesktopRoot = styled.body`
-  background-color: #091843;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
  heiht: 100%;

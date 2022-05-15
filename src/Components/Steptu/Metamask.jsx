@@ -26,13 +26,14 @@ function Metamask() {
     return(
         <VerticalTimelineElement
  
-    date={<Heading textStyle='h1'>Set-up Metamask</Heading>}
-    contentStyle={{ background: '#556655', color: 'rgb(249, 236, 216)' }}
+   
+    contentStyle={{ background: '#000000', color: '#ffffff', fontFamily:'inter' }}
     contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
-    iconStyle={{ background: '#556655', color: '#fff' }}
+    iconStyle={{ background: '#000000', color: '#ffffff' }}
     icon={< BsWallet />}
-  >
-      <Container color="white" >
+  ><Center>
+  <Text id="subtitle">Metamask</Text>
+  </Center>
   <Text>
   Installation de l'extension metamask sur votre navigateur, et configurer votre wallet aux réseaux Polygon.
   </Text>
@@ -56,7 +57,7 @@ function Metamask() {
           </ModalFooter>
         </ModalContent>
       </Modal>
-</Container >
+
   </VerticalTimelineElement>
 
 

@@ -15,7 +15,7 @@ import {
                   <h2>
                     <AccordionButton>
                       <Box flex='1' textAlign='left'>
-                     <Center> <Text fontSize="30px" > {titre.titre} </Text></Center>
+                     <Center> <Text id="subtitleLexique" > {titre.titre} </Text></Center>
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>

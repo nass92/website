@@ -25,12 +25,13 @@ return (
     <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="Decentraland"
-    contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
-    iconStyle={{ background: '#556655', color: '#fff' }}
+    contentStyle={{ background: '#000000', color: '#ffffff', fontFamily:'inter' }}
+    contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
+    iconStyle={{ background: '#000000', color: '#ffffff' }}
     icon={< FaGamepad/>}
   >
 <Center>
-<h2 className="vertical-timeline-element-subtitle"> Decentraland</h2>
+<Text id="subtitle"> Decentraland</Text>
 </Center>
 <br/>
 <h1 className="vertical-timeline-element-title">Metaverse, ok mais c'est quoi?</h1>

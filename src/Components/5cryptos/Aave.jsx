@@ -12,8 +12,7 @@ import {Text,
     ModalCloseButton,
     Button,
     Center,
-
-  } from '@chakra-ui/react'
+     } from '@chakra-ui/react'
   
 
 function Aave() {
@@ -25,13 +24,14 @@ return (
     <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="Aave Protocol"
-    contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
-    iconStyle={{ background: '#556655', color: '#fff' }}
+    contentStyle={{ background: '#000000', color: '#ffffff', fontFamily:'inter' }}
+    contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
+    iconStyle={{ background: '#000000', color: '#ffffff' }}
     icon={< GiBank/>}
   >
 
 <Center>
-<h2 className="vertical-timeline-element-subtitle"> AAVE</h2>
+<Text id="subtitle"> AAVE</Text>
 </Center>
 <br/>
 <h1 className="vertical-timeline-element-title">La Finance Décentralisée, vrai revolution?</h1>

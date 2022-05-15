@@ -19,7 +19,7 @@ function Projet() {
     <DesktopRoot>
 
     
-<VerticalTimeline> 
+<VerticalTimeline lineColor="black"> 
 
 <Box maxW='md'ml="29px" > 
   <h2 className="phrase"> 5 crypto qui apportent  solutions et innovation</h2>
@@ -50,7 +50,7 @@ function Projet() {
 
   <VerticalTimelineElement
   
-  iconStyle={{ background: '#556655', color: '#fff' }}
+  iconStyle={{ background: '#ffffff', color: '#fff' }}
     icon={<GrValidate/>}
   />
   

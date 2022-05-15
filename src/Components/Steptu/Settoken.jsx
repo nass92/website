@@ -20,14 +20,16 @@ function Settoken(){
 return(
 <VerticalTimelineElement
  
-        date={<Text color="blue" fontSize='6xl'>Mugiwara_index</Text>}
-        contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
+        
+        contentStyle={{ background: '#000000' , color: '#ffffff', fontFamily:'inter', fontWeight: '500',}}
         contentArrowStyle={{ borderRight: '10px solid rgb(240 239 206) '}}
-        iconStyle={{ background: '#556655', color: '#fff' }}
+        iconStyle={{ background: '#000000', color: '#ffffff' }}
     icon={< GiReceiveMoney/>}
   >
-   
-  <Text>
+   <Center>
+  <Text id="subtitle">TokenSet</Text>
+  </Center>
+  <Text class="fw-normal " size='20px' >
   TokenSet est la plateforme qui heberge l'index. C'est ici, que vous allez pouvoir investir, le temps d'une integration prochaine sur notre environnement web.
   </Text>
   <div className="buttonTuto">

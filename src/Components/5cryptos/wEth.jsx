@@ -25,15 +25,13 @@ return (
     <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date=" Wrapped Ethereum"
-    contentStyle={{ background: '#556655', color: 'rgb(249, 236, 216)' }}
+    contentStyle={{ background: '#000000', color: '#ffffff', fontFamily:'inter' }}
     contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
-    
-    
-    iconStyle={{ background: '#556655', color: '#fff' }}
+    iconStyle={{ background: '#000000', color: '#ffffff' }}
     icon={< FaEthereum/>}
   >
 <Center>
-<h2 className="vertical-timeline-element-subtitle"> Wrapped Ethereum</h2>
+<Text id="subtitle"> Wrapped Ethereum</Text>
 </Center>
 <br/>
 <Text  className="vertical-timeline-element-title">wETH ? ETH ? Ethereum ?</Text>

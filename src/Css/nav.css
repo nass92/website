@@ -3,7 +3,7 @@
   background-color: var(--bg-primary);
   transition: width 600ms ease;
 
-  background-color: #6c776c2e;
+  background-color: #02020200;
 
 }
 
@@ -48,7 +48,7 @@
 .link-text {
 
   margin-left: 1rem;
-  color: #279423;
+  color: #f0f4f0;
 }
 
 .nav-link svg {
@@ -118,7 +118,7 @@
     height: 8%;
     width: 100vw;
     justify-content: inherit;
-    background-color: #6c776c82;
+    background-color: #000000;
   }
 
   .navbar .mL  {

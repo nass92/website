@@ -18,12 +18,13 @@ function StepTu() {
     <DesktopRoot>
     
   
-<VerticalTimeline>
+<VerticalTimeline lineColor="black">
 
   <Box maxW='md'ml="29px" > 
+  <Center>
   <h2 className="phrase">3 Tuto pour être pret à prendre le large</h2>
   
- 
+  </Center>
 
   </Box>
 
@@ -32,14 +33,17 @@ function StepTu() {
 
 <VerticalTimelineElement
     
-    date={<Heading>Navigateur</Heading>}
-    contentStyle={{ background: 'rgb(240 239 206)' , color: '#556655' }}
+    
+    contentStyle={{ background: '#000000' , color: '#ffffff'}}
     contentArrowStyle={{ borderRight: '10px solid rgb(240 239 206) '}}
     
-    iconStyle={{ background: '#556655', color: '#fff' }}
+    iconStyle={{ background: '#000000', color: '#ffffff' }}
     icon={<BsGoogle/>}
   >
-  <Text>
+    <Center>
+  <Text id="subtitle">Navigateur</Text>
+  </Center>
+  <Text  >
   Assurez-vous d'utiliser Google Chrome, Firefox ou Brave comme navigateur, afin de pouvoir utliser pleinement les fonctionnabilités web3.
   </Text>
 
@@ -63,7 +67,7 @@ function StepTu() {
   
     <VerticalTimelineElement
    
-   iconStyle={{ background: '#556655', color: '#fff' }}
+   iconStyle={{ background: '#ffffff', color: '#fff' }}
     icon={<GrValidate/>}
   />
 </VerticalTimeline>

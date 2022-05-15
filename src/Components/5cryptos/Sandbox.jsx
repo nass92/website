@@ -23,14 +23,12 @@ return (
     <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date=" The Sandbox"
-    contentStyle={{ background: '#556655', color: 'rgb(249, 236, 216)' }}
-    
-    contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
-    
-    iconStyle={{ background: '#556655', color: '#fff' }}
+    contentStyle={{ background: '#000000', color: '#ffffff', fontFamily:'inter' }}
+        contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
+        iconStyle={{ background: '#000000', color: '#ffffff' }}
     icon={< SiNintendogamecube/>}
   ><Center>
-<h2 className="vertical-timeline-element-subtitle"> The Sandbox</h2>
+<Text id="subtitle"> The Sandbox</Text>
 </Center>
 <br/>
 <h1 className="vertical-timeline-element-title">Le Play To Earn, nouvelle generation de jeu video</h1>
