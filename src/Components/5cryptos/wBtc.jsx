@@ -11,6 +11,8 @@ import {Center, Text,
     ModalBody,
     ModalCloseButton,
     Button,
+    Container,
+    Box,
   
   } from '@chakra-ui/react'
   
@@ -20,11 +22,11 @@ function Wbtc() {
  
 
 return (
- 
+
     <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date=" Wrapped Bitcoin"
-    contentStyle={{ background: '#000000', color: '#ffffff', fontFamily:'inter' }}
+    contentStyle={{ background: '#000000', color: '#ffffff', fontFamily:'inter',  }}
         contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
         iconStyle={{ background: '#000000', color: '#ffffff' }}
     icon={< FaBitcoin/>}
@@ -68,5 +70,6 @@ return (
       </Modal>
 
              </VerticalTimelineElement>
+
 )}
 export default Wbtc;

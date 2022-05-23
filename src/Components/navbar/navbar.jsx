@@ -50,12 +50,6 @@ function Navbar() {
       </li>
 
 
-      <li class="nav-item" >
-        <a href="/" class="nav-link ">
-       
-          <span class="link-text">Acceuil</span>
-        </a>
-      </li> 
 
 
       <li class="nav-item">
