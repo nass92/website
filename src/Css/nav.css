@@ -2,11 +2,10 @@
   position: inherit;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
-
-  background-color: #02020200;
-
 }
-
+.nav-bar:hover {
+  background-image: linear-gradient(to left, #000000, #302c2c, #5e5654, #8e847e, #bfb6aa, #d4cdc1, #e9e4d8, #fffbf0, #fffaf5, #fffbfc, #fffdff, #ffffff);
+}
 .navbar-nav {
   list-style: none;
   padding: 0;
@@ -46,15 +45,22 @@
 }
 
 .link-text {
-
+  justify-content: center;
   margin-left: 1rem;
-  color: #f0f4f0;
+  color: #070707;
 }
 
 .nav-link svg {
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
+ 
+}
+#logo {
+  width: 100%;
+  min-width:450px;
+ margin-top: 650px;
+ margin-left: -300px;
  
 }
 
@@ -87,65 +93,101 @@
 .logo svg {
   transform: rotate(0deg);
   transition: var(--transition-speed);
- margin-right: -10px;
+
 }
 
 .logo-text
 {
   display: inline;
   position: absolute;
-  left: -999px;
   transition: var(--transition-speed);
 }
-
+.navbar .link-text{
+  display: none;
+ }
+.navbar:hover .link-text{
+ display: content;
+}
 .navbar:hover .logo-text{
-  margin-left: -10px;
-}
 
-.navbar:hover .logo svg {
-  transform: rotate(-180deg);
-
-  
 }
 
 
+
+.navbar:hover  svg {
+  margin-right: -250px;
+  color: transparent;
+}
+
+#burger-menu{
+  display: none;
+
+}
 
 /* Small screens */
-@media only screen  and (max-width: 1500px) {
+@media only screen  and (max-width: 1100px) {
   
   .navbar {
     bottom: 0;
     height: 8%;
-    width: 100vw;
+    width: auto;
     justify-content: inherit;
-    background-color: #000000;
-  }
-
-  .navbar .mL  {
-    display: none;
-  }
-  .logo{
-    margin-top: 15px;
-  }
-
-  .navbar-nav {
-    flex-direction: row;
-    margin-left: 6%;
-    
-  }
-
-  .nav-link {
+    background-image: transparent;
+    display: flex;
     justify-content: center;
+    flex-direction: row;
     
   }
 
+  
+  .navbar-nav {
+display: none;
+  }
  
 
-  main {
-    margin: 0;
+    #burger-menu{
+      display: flex;
+      justify-content: center;
+     
+    }
+
+  #logo1 {
+    color: a6ae74;
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    border: none;
+    display: wrap;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+  #connect-wallet2 {
+    width: 180px;
+    height: 40px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #connect-wallet {
+    display: none;
+  }
+
+  #footer-nav{
+    margin-bottom: 100px;
+    display: flex;
   }
 }
-
 @media only screen and (max-width: 1100px){
   .navbar .mL3  {
     margin-top: -15px;
@@ -158,7 +200,7 @@
 }
 
 /*medium screen */
-@media only screen and (min-width: 450px) and (max-width:1500px) {
+@media only screen and (min-width: 450px) and (max-width:1100px) {
 
   .navbar-nav{
    
@@ -167,9 +209,13 @@
     justify-content: center;
     
   }
+  .navbar .link-text{
+    display: flex;
+    justify-content: space-be;
+   }
 }
 /* Large screens */
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1100px) {
   .navbar {
     top: 0;
     width: 13rem;
@@ -211,7 +257,7 @@
     margin-left: 21px;
   }
   .navbar:hover .mL3  {
-    margin-left: 82px;
+    margin-left: 22px;
   }
   .navbar:hover .mL4  {
     margin-left: 16px;

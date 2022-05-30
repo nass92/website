@@ -2,6 +2,7 @@ import { SiNintendogamecube } from "react-icons/si";
 import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { useDisclosure } from '@chakra-ui/hooks';
+import Pte from '../../asset/IllustrationModal/playtoearn.jpg'
 import {Text,
     Modal,
     ModalOverlay,
@@ -12,6 +13,7 @@ import {Text,
     ModalCloseButton,
     Button,
     Center,
+    Image,
   } from '@chakra-ui/react'
   
 
@@ -61,6 +63,7 @@ return (
      <p> pour plus d'info, vous pouvez lire cette article  </p>
      <Button href="https://cryptoast.fr/the-sandbox-sand-metaverse-play-to-earn-tokenise/"colorScheme='teal' size='xs'>button</Button>
             </Text>
+            <Center> <Image src={Pte}/></Center>
           </ModalBody>
           <ModalFooter>
             <Button onClick={onClose}>Close</Button>

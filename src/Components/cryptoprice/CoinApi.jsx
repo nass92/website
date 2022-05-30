@@ -20,7 +20,6 @@ const Api = ({ setCrypto }) => {
   const filteredCoins = coins.filter(coin =>
     coin.name.toLowerCase().includes(search.toLowerCase()))
   return (
- 
   <>
         {filteredCoins.map(coin => {
           return (
@@ -33,7 +32,6 @@ const Api = ({ setCrypto }) => {
             />
           )
         })}
-     
     </>
   );
 }

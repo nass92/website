@@ -33,8 +33,7 @@ function Moonpay() {
   <Text id="subtitle">MoonPay</Text>
   </Center>
       <Text>
-      Pour investir dans l'index, échangé vos euro avec des $Matic, la crypto-monnaie du réseaux Polygon. 
-          Passer par moonpay pour pour une transaction simple par cb. 
+      Pour investir dans l'index, échangez vos euro avec des $Matic, la crypto-monnaie du réseau Polygon. Passez par moonpay pour une transaction simple par carte bleue.
        </Text>
           <div className="buttonTuto">
       <Button  variant='ghost' mt={4} m onClick={onOpen}>

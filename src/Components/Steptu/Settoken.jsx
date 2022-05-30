@@ -30,8 +30,7 @@ return(
   <Text id="subtitle">TokenSet</Text>
   </Center>
   <Text class="fw-normal " size='20px' >
-  TokenSet est la plateforme qui heberge l'index. C'est ici, que vous allez pouvoir investir, le temps d'une integration prochaine sur notre environnement web.
-  </Text>
+  TokenSet est la plateforme qui héberge l’index. Le temps d'une intégration prochaine sur notre environnement web, c’est ici que vous allez pouvoir investir.  </Text>
   <div className="buttonTuto">
   <Button  variant='ghost' mt={4} m onClick={onOpen}>
         Play Tuto

@@ -18,8 +18,9 @@
 }
 
 .titre{
+  
   font-family: 'Roboto Flex', sans-serif;
-  font-size: 55px;
+  font-size: 26px;
   
   color: rgb(0, 0, 0);
   
@@ -101,6 +102,19 @@ justify-content: flex-end;
 #hideMeAfter5Seconds {
   animation: hideAnimation 0s ease-in 5s;
   animation-fill-mode: forwards;
+}
+
+#im:hover{
+  transition: transform .3s;
+  -ms-transform: scale(2.0); /* IE 9 */
+  -webkit-transform: scale(2.0); /* Safari 3-8 */
+  transform: scale(2.5);
+}
+#im2:hover{
+  transition: transform .3s;
+  -ms-transform: scale(2.0); /* IE 9 */
+  -webkit-transform: scale(2.0); /* Safari 3-8 */
+  transform: scale(1.5);
 }
 
 @keyframes hideAnimation {
