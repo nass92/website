@@ -7,7 +7,8 @@ function ChatBot() {
 
   const handleInput = () => {
     const botMessage = document.querySelector('#message1')
-    const humanMessage = document.querySelector('#message2');
+    const botMessage2 = document.querySelector('#message2')
+    const humanMessage = document.querySelector('#message3');
 
   // to start the bot
     let welcome = ['Sup|sup|Hello|Hi|hello|hi|Yo|Halla|yello|yelow']
@@ -28,7 +29,8 @@ function ChatBot() {
       const status = document.querySelector('.status');
       botMessage.innerHTML = 'Typing...';
       setTimeout(() => {
-        botMessage.innerHTML = ` explorer notre site afin de vous formez au mieux ${<a path='/'>launch App</a>}`;
+        botMessage.innerHTML = ` explorer notre site afin de vous formez au mieux  `;
+        botMessage2.innerHTML= `${<button>la</button>}`;
         document.querySelector('#input').value = '';
       }, 2000);
       setTimeout(() => {
@@ -45,6 +47,7 @@ function ChatBot() {
         console.log('ici', key)
           let owner1 =  quiz[key].answer;
           console.log(quiz[key].answer)
+          let bool = quiz[key].three;
           let answers = quiz[key].question;
           let answers2 = quiz[key].question2;
           let answers3 = quiz[key].question3;
@@ -53,15 +56,17 @@ function ChatBot() {
               botMessage.innerHTML = 'Typing...';
               setTimeout(() => {
                 botMessage.innerHTML = answers;
+                botMessage2.innerHTML='Typing...'
                 document.querySelector('#input').value = '';
               }, 2000);
-              botMessage.innerHTML = 'Typing...';
+              
               setTimeout(() => {
-                botMessage.innerHTML = answers3;
+               {bool === true ? (botMessage2.innerHTML = answers3): (botMessage2.innerHTML = 'Typing...')}
                 document.querySelector('#input').value = '';
               }, 8000);
-              setTimeout(() => {
-                botMessage.innerHTML = answers2;
+              setTimeout(() => { {bool === true ? (botMessage.innerHTML = answers3): (botMessage.innerHTML = answers)}
+               
+                botMessage2.innerHTML = answers2;
                 document.querySelector('#input').value = '';
               }, 13000);
               botMessage.innerHTML = 'Typing...';
@@ -117,11 +122,16 @@ function ChatBot() {
           </div>
           <div className="main">
             <div className="main_content">
-              <Container className="messages">
+              <Container className="messages" >
               <div className="img">
               <img src={bot} alt="" />
-            </div>  <Container className="bot-message" id='message1'></Container> 
-               <Box> <Container className="human-message" id='message2'></Container> </Box>
+             <Box className="bot-message" id='message1'></Box> 
+             <Box className="bot-message" id='message2'></Box>
+             </div> 
+            
+            
+           
+              <Box className="human-message" id='message3'></Box>
               </Container>
             </div>
           </div>
@@ -133,12 +143,12 @@ function ChatBot() {
           </Box>
           </Center>
           <Box>
-              <Center>
-       <Button color='white' bg='#4299E1' mb='15px'width={['2xs','xs']} ml={["25px", "0px", "95px" ]}onClick={handleInput}>
-            <i className="fas fa-paper-plane"></i>
+            <Center>
+       <Button color='white' bg='#4299E1' mb='15px'w={['2xs','2xs','2xs','2xs','xs','xs']} ml={["0px", "0px","30px","20px","65px", "65px" ]}onClick={handleInput}>
+            <i className="fas fa-paper-plane" style={{marginRight:'15px'}}></i>
             Send
           </Button>
-          </Center>
+          </Center> 
           </Box>
                
 
@@ -152,3 +162,11 @@ function ChatBot() {
 }
 
 export default ChatBot;
+
+export const Boutton = () => {
+  return(
+    <>
+    <Link to='/'> Launch App</Link>
+    </>
+  )
+}

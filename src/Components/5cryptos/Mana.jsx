@@ -36,7 +36,7 @@ function Mana() {
   <Text id="subtitle"> Decentraland</Text>
   </Center>
   <br/>
-  <h1 className="vertical-timeline-element-title">Metaverse, ok mais c'est quoi?</h1>
+  <h1 className="sous_phrase">Metaverse, ok mais c'est quoi?</h1>
      
    <p>Une métaverse est un monde virtuel.
      Le terme est régulièrement utilisé pour décrire une future version d'Internet où des espaces virtuels, 

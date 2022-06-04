@@ -9,7 +9,7 @@ import {VscGraphLine} from "react-icons/vsc"
 import {CgDanger,} from "react-icons/cg"
 import Api from "../cryptoprice/CoinApi";
 import Navbar from "../navbar/navbar";
-import { Box, Center, Heading, Container, Text, Stat, SimpleGrid, StatLabel } from "@chakra-ui/react";
+import { Box, Center, Heading, Container, Text, Stat, SimpleGrid, StatLabel, Image } from "@chakra-ui/react";
 import SVG from '../../asset/lg.svg'
 
 function Acc() {
@@ -22,12 +22,11 @@ function Acc() {
     <VerticalTimeline lineColor="black">
 
       <SimpleGrid column={2}>
-      <Box maxW='md'color='white' mt="18px">
-        <Center>
-        <img className="titre" src={SVG} alt='Mugiwara'/>
-        </Center>
-      </Box>
-      <Box maxW='sm' mt='20px' ml= {['50px','80px','100px','100px','100px','0px']} mb= {['20px','25px','35px','35px','0px','0px']} > 
+   
+        <Image maxH="300px"  ml= {['14px','20px','80px','40px','0px','0px']}  src={SVG} alt='Mugiwara'/>
+       
+     
+      <Box maxW='sm' mt='20px' ml= {['50px','80px','250px','150px','80px','0px']} mb= {['20px','25px','35px','35px','0px','0px']} > 
         <Center>
         <h2 className="titre"> Voici comment comprendre, analyser et entrer dans le monde de la crypto-monnaie</h2>
         </Center>
@@ -42,7 +41,7 @@ function Acc() {
     iconStyle={{ background: '#000000', color: '#C1E6C4' }}      
     >
     <Center>
-    <Text id="subtitle "color= '#ffffff'> Qu'est ce qu'un Crypto_index ?</Text>
+    <h3  className="sous_phrase" color= '#ffffff'> Qu'est ce qu'un Crypto_index ?</h3>
     </Center>
       <p>Un Crypto Index est un portefeuille diversifié de cryptomonnaies sélectionnées que vous pouvez acheter, vendre ou swapper en un seul clic, au lieu de passer par l’opération d'achat et de vente de chaque cryptomonnaie individuellement. Il vous permet de diversifier facilement votre portefeuille de cryptomonnaies.</p>
     </VerticalTimelineElement>
@@ -73,16 +72,16 @@ function Acc() {
     <Stat>
       <SimpleGrid columns={4} spacing={1} >
         <Box  height='auto'mt= {['10px','10px','5px','5px','0px','0px']} >
-        <StatLabel><Heading as="h3"> <a href="https://www.moonpay.com/buy"> <BsDiscord/> </a>   </Heading></StatLabel>
+        <StatLabel><Heading as="h3" color="whiteAlpha.700"> <a href="https://www.moonpay.com/buy"> <BsDiscord/> </a>   </Heading></StatLabel>
         </Box>
         <Box  height='auto' mt= {['10px','10px','5px','5px','0px','0px']} >
-        <StatLabel><Heading as="h3" > <a href="https://www.moonpay.com/buy"> <BsInstagram/></a>   </Heading></StatLabel>
+        <StatLabel><Heading as="h3"  color="whiteAlpha.700" > <a href="https://www.moonpay.com/buy"> <BsInstagram/></a>   </Heading></StatLabel>
           </Box>
           <Box  height='auto'mt= {['10px','10px','5px','5px','0px','0px']} >
-        <StatLabel><Heading as="h3" > <a href="https://www.moonpay.com/buy"> < BsSnapchat/>  </a>   </Heading></StatLabel>
+        <StatLabel><Heading as="h3"  color="whiteAlpha.700" > <a href="https://www.moonpay.com/buy"> < BsSnapchat/>  </a>   </Heading></StatLabel>
         </Box>
         <Box  height='auto'mt= {['10px','10px','5px','5px','0px','0px']} >
-        <StatLabel><Heading as="h3" > <BsTelegram/>  </Heading></StatLabel>
+        <StatLabel><Heading as="h3"  > <BsTelegram/>  </Heading></StatLabel>
         </Box>
       </SimpleGrid>
     </Stat>

@@ -1,32 +1,20 @@
 import React from 'react'
 import { BsBank } from 'react-icons/bs';
 import { RiExchangeDollarFill, RiQuestionnaireLine } from 'react-icons/ri';
-import { TiThMenuOutline } from "react-icons/ti";
 import { Box, 
   Button,
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  Center,
-  useDisclosure,
-  SimpleGrid,
+  Link
 } from '@chakra-ui/react'
-import { Link } from 'react-router-dom';
-
+import NavBurger, { LexDrawer } from './NavBurger';
 
 
 function Navbar() {
 
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const btnRef = React.useRef()
+
     return(
       <>
   <nav class="navbar">
@@ -54,67 +42,36 @@ function Navbar() {
         </a>
       </li>
       <li class="nav-item">
-        <a href="steptuto" class="nav-link">
-        <span class="link-text">Tutoriel</span>
-        </a>
-      </li>
-      <li class="nav-item">
         <a href="projet" class="nav-link ">
         <span class="link-text">Cryptos</span>
         </a>
       </li>
-      <li class="nav-item" > 
-        <a href="lexique" class="nav-link ">
-        <span class="link-text"> Lexique</span>
+      <li class="nav-item">
+        <a href="steptuto" class="nav-link">
+        <span class="link-text">Tutoriel</span>
         </a>
-      </li> 
+      </li>
+    
+   
       <li class="nav-item">
       <Menu >
         <MenuButton className="link-text" aria-label='Options' variant='link'   as={Button} size="2xs"ml= {['0px','00px','0px','70px','50px','70px']}  >Investissement</MenuButton>
         <MenuList>
-        <a href="https://www.moonpay.com/buy" ><MenuItem icon={ <RiExchangeDollarFill />} >Buy $Matic</MenuItem></a>
-        <a href="https://www.moonpay.com/buy" ><MenuItem icon={<BsBank/>}> Invest In M_Index</MenuItem></a>
+        <a href="/mugiwara" ><MenuItem icon={ <RiExchangeDollarFill />} >Mugiwara</MenuItem></a>
+        <a href="/tutoinvest" ><MenuItem icon={ <RiExchangeDollarFill />} >Tutoriel Pour Investir</MenuItem></a>
+        <Link  href="https://www.moonpay.com/buy" isExternal ><MenuItem icon={ <RiExchangeDollarFill />} >Buy $Matic</MenuItem></Link>
+        <Link href="https://www.moonpay.com/buy" isExternal><MenuItem icon={<BsBank/>}> Invest In M_Index</MenuItem></Link>
         <a href="FAQ"> <MenuItem icon={<RiQuestionnaireLine />}>FAQ</MenuItem></a>
         </MenuList>
       </Menu>
       </li>
+  
       <Box></Box>
     </ul>
 
- 
-      <Button id='burger-menu' bg='transparent' color='white' maxW='sm' ml={['170px','250px','400px','500px',null,null]}   ref={btnRef} onClick={onOpen}>
-      <TiThMenuOutline/>
-      </Button>
-
-     <Drawer
-      isOpen={isOpen}
-      placement='left'
-      onClose={onClose}
-      finalFocusRef={btnRef}
-     >
-        <DrawerOverlay />
-        <DrawerContent background="#030003"  color="#FFFFFF">
-          <DrawerCloseButton />
-          <DrawerHeader>Navigation</DrawerHeader>
-          <DrawerBody>
-          <Center>
-          <SimpleGrid column={1} >
-            <Link to='/' id='logo1'>Home</Link>
-            <Link to='/exposition' id='logo1'>Exposition</Link>
-            <Link to='/marketplace' id='logo1'>MarketPlace</Link>
-            <Link to='/dashboard' id='logo1'>Dashboard</Link>
-          </SimpleGrid>
-          </Center>
-          </DrawerBody>
-
-          <DrawerFooter id='footer-nav'>
-            <Button variant='outline' mr={3} onClick={onClose}>
-              Close
-            </Button>
-          </DrawerFooter>
-        </DrawerContent>
-      </Drawer>
-
+ <Box id='burger-menu'>
+   <NavBurger/>
+      </Box>
 
     
   </nav>

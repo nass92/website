@@ -1,6 +1,6 @@
 import './ChatApp.css';
 import { useState} from 'react';
-import {  Box,  Center,  Flex, Grid, GridItem, Heading, List, ListIcon, ListItem, Spacer, Text } from '@chakra-ui/react';
+import {  Box,  Button,  Center,  Flex, Grid, GridItem, Heading, List, ListIcon, ListItem, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Spacer, Text, useDisclosure } from '@chakra-ui/react';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import logo from '../../asset/LOGO-NASS-NOIR.png'
 import { Link } from 'react-router-dom';
@@ -37,57 +37,59 @@ function ChatApp() {
       status.style.color = 'red';
     }
   }
-  
+  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
      
     <div className="App" onLoad={checkStatus}>
          <DesktopRoot2>
         <Flex>
-  <Box p='4'>
+  <Box p='4'ml= {["0px", "0px", "0px", "0px", "160px", "160px"]}  mt= {["0px", "0px", "0px", "0px", "40px", "40px"]}>
   <img src={logo} alt='logo'/>
   </Box>
   <Spacer />
-  <Box mt= {["45px", "45px", "45px", "60px", "60px", "60px"]}>
-<Link to='/mugiwara'> <Text id="launch" >Launch App </Text></Link>
+  <Box mt= {["45px", "45px", "45px", "60px", "110px", "110px"]} mr= {["0px", "0px", "0px", "0px", "130px", "130px"]}>
+<Link to='/projet'> <Text id="launch" >Launch App </Text></Link>
   </Box>
 </Flex>
 
 <Grid templateColumns='repeat(3)' gap={3}  >
 
-<GridItem colSpan={[3,3, 3, 3, 2, 2]}  mt={["10px","30px","75px"]} ml={["0px","25px","0px"]}  >
+<GridItem colSpan={[3,3, 3, 3, 2, 2]}  mt={["10px", "15px", "25px", "25px", "30px", "30px"]} ml={["0px","25px","0px"]}  >
 <Center>
 <Box p={5} s  maxW="auto" ml={["0px", "50px", "100px"]} >
 
 <Box  borderBottomWidth='1px' >
-   <Center> <Heading color='#B0A7C2' mt="10px">Pour Votre Future</Heading></Center>
+   <Center> <Text fontSize={["45px","45px","55px","55px","55px","70px"]} color='#B0A7C2' mt="10px">Pour Votre Future</Text></Center>
    </Box>
     <Box  mt="30px" >
-        <Text fontSize="18px" color="gray.500"> 
+        <Text fontSize={["22px","22px","25px","25px","27px","30px"]} color="gray.500"> 
             Formez vous simplement et gratuitement au monde de la crypto-monnaie
         </Text>
     </Box>
+    <br/>
     <Box>
-        <Text mt="10px" fontSize="20px" color="gray.500"> 
-            ici, vous trouverez des information ainsi que des explications, sur : 
+        <Text mt="10px" fontSize={["22px","22px","25px","25px","27px","30px"]}  color="gray.500"> 
+            Ici, vous trouverez des informations ainsi que des explications, sur : 
         <List spacing={3}>
             <ListItem>
-                <ListIcon as={MdCheckCircle} color='green.500' />
+                <ListIcon as={MdCheckCircle} fontSize={["22px","22px","25px","25px","27px","28px"]}  color='green.500' />
                     Les bases de la crypto-monnaie (qu'est ce qu'une crypto, une blockchain...)
             </ListItem>
             <ListItem>
-                 <ListIcon as={MdCheckCircle} color='green.500' />
+                 <ListIcon as={MdCheckCircle}fontSize={["22px","22px","25px","25px","27px","30px"]}  color='green.500' />
                     Des informations, à la fois détaillé et simplifié, des plus grosses cryptos du moment
             </ListItem>
             <ListItem>
-                <ListIcon as={MdCheckCircle} color='green.500' />
+                <ListIcon as={MdCheckCircle} fontSize={["22px","22px","25px","25px","25px","30px"]}  color='green.500' />
                     Des tutoriels, afin de pouvoir sauter le pas 
             </ListItem>
         </List>
         </Text>
     </Box>
+    <br/>
     <Box>
-    <Text mt="10px" fontSize="20px" color="gray.500">
-        Dite "HI" a notre robot, afin qu'il vous guide au mieux
+    <Text mt="10px" fontSize={["22px","22px","25px","25px","25px","30px"]}   color="gray.500">
+    🤖 Commencer par dire "Hi" à notre robot. 
     </Text>
     </Box>
     
@@ -109,10 +111,10 @@ function ChatApp() {
 
 </GridItem>
 
-<GridItem  colSpan={[2,3]}    >
+<GridItem  colSpan={[3]}    >
  
-
-<Player
+<a onClick={onOpen}>
+  <Player
   autoplay
   loop
   src="https://assets5.lottiefiles.com/packages/lf20_96bovdur.json"
@@ -120,6 +122,29 @@ function ChatApp() {
 >
   <Controls visible={false}  />
 </Player>
+</a>
+      <Modal
+        isCentered
+        onClose={onClose}
+        isOpen={isOpen}
+        motionPreset='slideInBottom'
+      >
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Modal Title</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+         
+          </ModalBody>
+          <ModalFooter>
+            <Button colorScheme='ghost' mr={3} onClick={onClose}>
+              Close
+            </Button>
+            
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+
 
        </GridItem>
 

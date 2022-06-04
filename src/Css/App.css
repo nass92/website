@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700;8..144,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,500&family=Roboto:ital,wght@1,300&display=swap');
 
 * {
 	margin: 0;
@@ -17,8 +17,10 @@
   color: rgb(14, 219, 14);
 }
 
+
 .titre{
   
+  font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Flex', sans-serif;
   font-size: 26px;
   
@@ -43,8 +45,8 @@
   font-family:Georgia, serif;
   font-size: 19px;
   margin-bottom: 10px;
-  font-style: italic;
-font-weight: bolder;}
+ 
+font-weight: 600;}
 
 .go{
   display: flex;
@@ -80,18 +82,20 @@ justify-content: flex-end;
 .inter{
   font-family: 'Inter, sans-sherif';
 }
-
+.date{
+  color:'#000000'
+}
 #subtitle {
   
   color: white;
   font-size: 25px;
   margin-top: -15px;
-  font-style: italic;
+
 }
 #subtitleLexique{
   color: white;
   font-size: 22px;
-  margin-top: -5px;
+
   
 }
 #tkt{
@@ -122,5 +126,10 @@ justify-content: flex-end;
     visibility: hidden;
     width: 0;
     height: 0;
+  }
+}
+@media only screen  and (max-width: 1100px) {
+  .lexbutton {
+    display:none;
   }
 }

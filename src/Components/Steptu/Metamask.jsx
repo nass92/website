@@ -34,8 +34,10 @@ function Metamask() {
   ><Center>
   <Text id="subtitle">Metamask</Text>
   </Center>
-  <Text>
-  Installation de l'extension metamask sur votre navigateur, et configurer votre wallet aux réseaux Polygon.
+  <Text className="sous_phrase">
+  MetaMask est un portefeuille de crypto-monnaie (wallet) utilisé pour interagir avec différente blockchain. 
+  Il permet aux utilisateurs d'accéder à leur portefeuille  via une extension de navigateur ou une application mobile, 
+  qui peut ensuite être utilisée pour interagir avec des applications décentralisées.
   </Text>
   <div className="buttonTuto">
   <Button  variant='ghost' mt={4} m onClick={onOpen}>

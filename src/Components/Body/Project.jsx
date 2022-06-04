@@ -1,37 +1,42 @@
 import {DesktopRoot} from "../../Css/style"
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { Box, Center, Container, SimpleGrid } from "@chakra-ui/react";
+import { Box, Center, Container, Flex, Grid, GridItem, Image, SimpleGrid, Spacer } from "@chakra-ui/react";
 import { GrValidate} from "react-icons/gr";
 import Weth from "../5cryptos/wEth";
 import Mana from "../5cryptos/Mana";
 import Sandbox from "../5cryptos/Sandbox";
 import Aave from "../5cryptos/Aave";
 import Wbtc from "../5cryptos/wBtc";
-import Navbar from "../navbar/navbar";
+import { LexDrawer } from "../navbar/NavBurger";
+import Navbar from '../navbar/navbar'
 import Fusée from '../navbar/fusée';
 import SVG from '../../asset/lg.svg'
 function Projet() {
   return (<>
   <Container maxW='xs' ml="-15px"  className="fixed-top ">
       <Navbar/>
+
   </Container>
+
   <DesktopRoot>
   <VerticalTimeline lineColor="black"> 
+  <Flex>
 
-    <SimpleGrid column={2}>
-      <Box maxW='md'color='white' mt="18px">
+  <SimpleGrid column={2}>
+    <Image maxH="300px"  ml= {['18px','20px','80px','40px','0px','0px']}  src={SVG} alt='Mugiwara'/>
+      <Box maxW='md' mt='20px' ml= {['50px','80px','100px','100px','100px','0px']} mb= {['20px','25px','35px','35px','0px','0px']} > 
         <Center>
-        <img className="titre" src={SVG} alt='Mugiwara'/>
-        </Center>
-      </Box>
-      <Box maxW='sm' mt='20px' ml= {['50px','80px','100px','100px','100px','0px']} mb= {['20px','25px','35px','35px','0px','0px']} > 
-        <Center>
-        <h2 className="titre">  5 crypto qui apportent  solutions et innovation</h2>
+        <h2 className="titre">  Il existe plusieur secteur dans le monde de la crypto.Voici quelques exemples de crypto-monnaie appartenant à ces différents secteur.</h2>
         </Center>
       </Box>
     </SimpleGrid>
 
+  <Spacer />
+  <Box mt= {["0px", "0px", "45px", "130px", "130px", "130px"]} mr= {["0px", "0px", "0px", "0px", "0px", "0px"]} className='lexbutton'>
+ <LexDrawer className='fixed-top'/> 
+  </Box>
+</Flex>
     <Weth/>
 
     <Mana/>

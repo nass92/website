@@ -1,63 +1,63 @@
 [
-    {
+    { "three":true,
         "answer": ["'Sup|sup|Hello|Hi|hello|hi|Yo|Halla|yello|yelow'"],
         "question": "Bienvenu à vous, mugiwara vous apportera les connaissance nécessaire pour vous lancer dans le monde la crypto-monnai",
         "question3": "  etes vous pret à repondre à un  petit quizz de connaisance? repondre : lets go ou non tkt robot je gere'",
         "question2": " L. lets go  X. Non tkt robot je gere. Repondre: L ou X uniquement"
     },
     {
-      
+        "three":false,
         "answer": ["non merci|non merci robot|Non merci|Non merci robot|non tkt robot je gere|Non tkt robot je gere|non tkkt robot je gere|Non tkkt robot je gere|non tkt robo je gere|Non tkt robo je gere|non tkt robot je gère|Non tkt robot je gère|non tkkt robot je gère|Non tkkt robot je gère|non tkt robo je gère|Non tkt robo je gère|non tkkt robo je gère|Non tkkt robo je gère|no tkt robot je gere|No tkt robot je gere|no tkkt robot je gere|No tkkt robot je gere|no tkt robo je gere|No tkt robo je gere|no tkt robot je gère|No tkt robot je gère|no tkkt robot je gère|No tkkt robot je gère|no tkt robo je gère|No tkt robo je gère|no tkkt robo je gère|No tkkt robo je gère|none tkt robot je gere|None tkt robot je gere|none tkkt robot je gere|None tkkt robot je gere|none tkt robo je gere|None tkt robo je gere|none tkt robot je gère|None tkt robot je gère|none tkkt robot je gère|None tkkt robot je gère|none tkt robo je gère|None tkt robo je gère|none tkkt robo je gère|None tkkt robo je gère|no tkt robot je gere|No tkt robot je gere|no tkkt robot je gere|No tkkt robot je gere|no tkt robo je gere|No tkt robo je gere|no tkt robot je gère|No tkt robot je gère|no tkkt robot je gère|No tkkt robot je gère|no tkt robo je gère|No tkt robo je gère|no tkkt robo je gère|No tkkt robo je gère|Non|non|none|no|No|None|non tkt|Non tkt|no tkt|No tkt|non tkkt|Non tkkt|No tkkt|no tkkt|non tkt pas|non tkkt pas|Non tkt pas|Non tkkt pas|no tkt pas|No tkt pas|no tkkt ap|No tkkt ap| non tkt ap|non tkkt ap|Non tkt ap|Non tkkt ap|no tkt ap|No tkt ap|no tkkt ap|No tkkt ap"],
         "question": "Pas plus que moi 🤪. Passez une bonne journée."
     },
-    {
+    {   "three":false,
         "answer": ["L|l|X|x|lets go|Lets go|Let's go|let's go|ok|Ok|oui|Oui|D'accord|oui svp|oui s'il vous plait|Oui s'il vous plait|yes|Yes"],
         "question": "1er question: Qu'est ce qu'une crypto-monnaie? ",
         "question2":"1.Un Smart-Contract. 2. Un moyen d'échange Décentraliser. 3. De l'argent Facile. Repondre: 1, 2, ou 3 uniquement"
     },
-    {
+    {   "three":true,
         "answer": ["1"],
         "question": "Mauvaise réponse 😢 les Smart-Contrats sont des contrats inteligent (ex: acte notarié grace au nft). Une crypto-monnaie est un moyen d'échange décentralisé ne régissant d'aucune institution fonctionnant grace à une Blockchain",
         "question3": " 2eme question : Qu'est ce qu'une blockchain? 1",
         "question2": " A. Stockage et Transmission d'information. B. Un serveur. C. alors la ???  Repondre: A, B ou C uniquement"
     },
-    {
+    {"three":true,
         "answer": ["2"],
         "question": "Excatement😎 Mais Une crypto-monnaie est un moyen d'échange décentralisé ne régissant d'aucune instution.",
         "question3": " 2eme question : Qu'est ce qu'une blockchain? 1.",
         "question2": " A. Stockage et Transmission d'information. B. Un Serveur. C. alors la ??? Repondre: A, B ou C uniquement "
     },
-    {
+    {"three":true,
         "answer": ["3"],
         "question": "c'est beau de réver 😎 Mais Une crypto-monnaie est un moyen d'échange décentralisé ne régissant d'aucune instution.",
         "question3": " 2eme question : Qu'est ce qu'une blockchain?",
         "question2": " A. Stockage et Transmission d'information. B. Un serveur. C. alors la??  Repondre: A, B ou C uniquement "
     },
-    {
+    {"three":true,
         "answer": ["A"],
         "question": "Je vois que vous connaissait les bases. ",
         "question3": " 3eme question : Et Ethereum: ?",
         "question2": " D. Une Crypto-monnaie E. Une plateforme logiciel qui permet de construire des applications décentralisées. Repondre: D ou E uniquement"
     },
-    {
+    {"three":true,
         "answer": ["B"],
         "question": "Sa aurait put, mais une Blockchain est une base de donnée qui permet le Stockage et Transmission d'information. Elle fonctionne sur different serveur de facon décentralisé",
         "question3": " 3eme question : Et Ethereum: ?",
         "question2": " D. Une Crypto-monnaie E. Une plateforme logiciel qui permet de construire des applications décentralisées. Repondre: D ou E uniquement"
     },
-    {
+    {"three":true,
         "answer": ["C"],
         "question": "No Stress, une Blockchain c'est juste un livre comptable (une entré, une sorti et une valeur), ou plus communément appellée base de donnée, qui insrit et transmet toutes les information qui y passent",
         "question3": "3eme question : Et Ethereum: ?",
         "question2": " D. Une Crypto-monnaie E. Une plateforme logiciel qui permet de construire des applications décentralisées. Repondre: D ou E uniquement"
     },
-    {
+    {"three":true,
         "answer": ["D"],
         "question": "Et Non, Ethereum fonctionne grâce à la cryptomonnaie ETHER. Mais c'est, en réalité, une plateform qui permet de créer des application décentralisée par le biais de smart-contract. ",
         "question3": " 4eme question : Etes-vous interréssez en savoir plus?",
         "question2": "Y.Oui N. Non. Repondre: Y ou N uniquement"
     },
-    {
+    {"three":true,
         "answer": ["E"],
         "question": "On gere le domaine à ce que je vois. ",
         "question3": " 4eme question : Etes-vous interréssez en savoir plus?",

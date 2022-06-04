@@ -14,6 +14,7 @@ import {Text,
     Button,
     Center,
     Image,
+    Link,
      } from '@chakra-ui/react'
   
 
@@ -36,7 +37,7 @@ return (
 <Text id="subtitle"> AAVE</Text>
 </Center>
 <br/>
-<h1 className="vertical-timeline-element-title">La Finance Décentralisée, vrai revolution?</h1>
+<h1 className="sous_phrase">La Finance Décentralisée, vrai revolution?</h1>
     <p> 
     La Defi (finance décentralisée), a bouleversé ce secteur. La finance décentralisée ou DeFi est un moyen d'échanger, 
     d'acheter et de vendre avec peu d'intermédiaires et donc par théorie, d'éviter les fonds bloqués ou des frais non prévus à la base ou toutes autres actions qui impacteraient les finances des propriétaires de fonds.  
@@ -67,10 +68,13 @@ return (
                 Aave est un protocole open-source de finance décentralisée qui permet à n’importe qui de prêter et d’emprunter des cryptomonnaies. 
                 En prêtant vos actifs numériques à la plateforme (et à ses utilisateurs), vous allez pouvoir gagner des intérêts. 
                 Cela vous permet aussi de réaliser un prêt qui va être garanti par la valeur déposée.
+            </p> 
+            <p class="mt-3"> Pour plus d'inforation, vous pouvez vous redirigez vers <space/>  
+            <Link href="https://www.journaldugeek.com/crypto/acheter/aave/" isExternal>
+              <Button variant='link' size='xs'> cette article</Button>
+            </Link>
             </p>
-    <p> Pour plus d'info, vous pouvez lire cette article  </p>
-    <a href="https://www.journaldugeek.com/crypto/acheter/aave/"><Button colorScheme='teal' size='xs'>button</Button></a>
-    </Text>
+           </Text>
           </ModalBody>
           <ModalFooter>
             <Button onClick={onClose}>Close</Button>

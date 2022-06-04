@@ -29,8 +29,8 @@ return(
    <Center>
   <Text id="subtitle">TokenSet</Text>
   </Center>
-  <Text class="fw-normal " size='20px' >
-  TokenSet est la plateforme qui héberge l’index. Le temps d'une intégration prochaine sur notre environnement web, c’est ici que vous allez pouvoir investir.  </Text>
+  <Text className="sous_phrase" size='20px' >
+  TokenSet est une plateform qui permet la création, ainsi que l'hebrgement d'index crypto. Vous allez pouvoir, ainsi, investir de façon la plus simple.  </Text>
   <div className="buttonTuto">
   <Button  variant='ghost' mt={4} m onClick={onOpen}>
         Play Tuto

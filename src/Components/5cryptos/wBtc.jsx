@@ -13,6 +13,7 @@ import {Center, Text,
     ModalCloseButton,
     Button,
     Image,
+    Link,
   
   } from '@chakra-ui/react'
   
@@ -35,7 +36,7 @@ return (
 <Text id="subtitle"> Wrapped Bitcoin</Text>
 </Center>
 <br/>
-<h1 className="vertical-timeline-element-title">Bitcoin, reine des crypto-monnaies</h1>
+<h1 className="sous_phrase">Bitcoin, reine des crypto-monnaies</h1>
     <p>
     Le bitcoin est une monnaie virtuelle dont l’unique fonction est de réaliser des paiements en ligne, sans intermédiaire.
      Ni plus, ni moins. Le bitcoin n’a aucune existence physique et ne dépend d’aucune banque centrale. 
@@ -60,8 +61,8 @@ return (
        Le bitcoin ne peut être échangé qu'a travers son réseau. Il ne dispose pas de caractéristiques suffisante pour pouvoir l'utiliser, l’échanger sur des Dapps. Plusieurs acteurs, de la communauté Bitcoin, ont conjointement lancé le Wrapped Bitcoin, pour répondre à ce problème.
        Le WBTC a pour principales missions d'apporter la grande liquidité caractéristique du Bitcoin (BTC) à l'écosystème décentralisé et d'améliorer toutes les applications décentralisées (dApps).
       </p>
-    <p class="mt-3"> Pour plus d'info, vous pouvez lire cette article  
-    <a href="https://cryptoast.fr/btc-emballe-wrapped-btc-wbtc/"><Button colorScheme='teal' size='xs'>button</Button></a></p>
+    <p class="mt-3"> Pour plus d'inforation, vous pouvez vous redirigez vers <space/>  
+    <Link href="https://cryptoast.fr/btc-emballe-wrapped-btc-wbtc/" isExternal><Button variant='link' size='xs'> cette article</Button></Link></p>
 </Text>
 <Center> <Image src={Btc}/> </Center>
           </ModalBody>

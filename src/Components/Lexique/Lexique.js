@@ -23,7 +23,7 @@ return (
     <Navbar/>
   </Container>
   <VerticalTimeline lineColor="black">
-  <Accordion  allowMultiple>
+  <Accordion allowToggle>
 
     <SimpleGrid column={2}>
       <Box maxW='md'color='white' mt="18px">
@@ -33,26 +33,12 @@ return (
       </Box>
       <Box maxW='sm' mt='20px' ml= {['50px','80px','100px','100px','100px','0px']} mb= {['20px','25px','35px','35px','0px','0px']} > 
         <Center>
-        <h2 className="titre"> Le Lexique de la Blockchain</h2>
+        <h2 className="titre"> Le Lexique de la Blockchain, afin de vous familiarizer avec les mots technique</h2>
         </Center>
       </Box>
     </SimpleGrid>
-
-    {titre.map(( titre) =>(
-    <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date=""
-    contentStyle={{ background: '#000000', color: '#ffffff', fontFamily:'inter' }}
-    contentArrowStyle={{ borderRight: '9px solid rgb(73 85 73)' }}
-    iconStyle={{ background: '#000000', color: '#ffffff' }}
-    icon={<BiBookReader/>}
-    >
-    <AccordionItem  >
-      <Def key={titre.id} titre = {titre}/>
-    </AccordionItem  >
-    </VerticalTimelineElement>
-    ))}
-
+<LexMap/>
+   
   </Accordion>
   </VerticalTimeline> 
 </DesktopRoot>
@@ -61,3 +47,16 @@ return (
 
 )}
 export default Lexiqu
+
+export const LexMap = ()=> {
+ return(<>
+ {titre.map(( titre) =>(
+<Box mb='50px'>
+    <AccordionItem  borderColor='#000000' >
+      <Def key={titre.id} titre = {titre}/>
+    </AccordionItem  >
+    </Box>
+    ))}
+    </> 
+ )
+}

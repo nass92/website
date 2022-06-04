@@ -3,9 +3,7 @@
   background-color: var(--bg-primary);
   transition: width 600ms ease;
 }
-.nav-bar:hover {
-  background-image: linear-gradient(to left, #000000, #302c2c, #5e5654, #8e847e, #bfb6aa, #d4cdc1, #e9e4d8, #fffbf0, #fffaf5, #fffbfc, #fffdff, #ffffff);
-}
+
 .navbar-nav {
   list-style: none;
   padding: 0;
@@ -37,12 +35,7 @@
   transition: var(--transition-speed);
 }
 
-.nav-link:hover {
-  filter: grayscale(0%) opacity(1);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
-  
-}
+
 
 .link-text {
   justify-content: center;
@@ -50,19 +43,15 @@
   color: #070707;
 }
 
-.nav-link svg {
-  width: 2rem;
-  min-width: 2rem;
-  margin: 0 1.5rem;
- 
-}
+
 #logo {
   width: 100%;
   min-width:450px;
- margin-top: 650px;
- margin-left: -300px;
+ margin-top: 1450px;
+ margin-left: -150px;
  
 }
+
 
 .fa-primary {
   color: #279423;
@@ -108,6 +97,9 @@
 .navbar:hover .link-text{
  display: content;
 }
+.navbar:hover #logo{
+  margin-top: 1200px;
+}
 .navbar:hover .logo-text{
 
 }
@@ -125,14 +117,14 @@
 }
 
 /* Small screens */
-@media only screen  and (max-width: 1100px) {
+@media only screen  and (max-width: 1169px) {
   
   .navbar {
     bottom: 0;
     height: 8%;
-    width: auto;
+    width: 100%;
     justify-content: inherit;
-    background-image: transparent;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -187,8 +179,9 @@ display: none;
     margin-bottom: 100px;
     display: flex;
   }
+
 }
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1169px){
   .navbar .mL3  {
     margin-top: -15px;
     margin-left:50px
@@ -200,7 +193,7 @@ display: none;
 }
 
 /*medium screen */
-@media only screen and (min-width: 450px) and (max-width:1100px) {
+@media only screen and (min-width: 450px) and (max-width:1169px) {
 
   .navbar-nav{
    
@@ -215,13 +208,14 @@ display: none;
    }
 }
 /* Large screens */
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1170px) {
   .navbar {
     top: 0;
     width: 13rem;
     height: 100vw;
     justify-content:inherit ;
     align-items: center;
+
   }
 .nav-bar{
   flex-direction: column;
