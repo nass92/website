@@ -3,8 +3,6 @@ import {  VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import { useDisclosure } from '@chakra-ui/hooks';
 import {  BsWallet} from "react-icons/bs";
 import {Center,
-  Container, 
-  Heading, 
   Text,
   Modal,
   ModalOverlay,

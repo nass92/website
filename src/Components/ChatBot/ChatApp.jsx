@@ -1,6 +1,6 @@
 import './ChatApp.css';
 import { useState} from 'react';
-import {  Box,  Button,  Center,  Flex, Grid, GridItem, Heading, List, ListIcon, ListItem, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Spacer, Text, useDisclosure } from '@chakra-ui/react';
+import {  Box,  Button,  Center,  Flex, Grid, GridItem, List, ListIcon, ListItem, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, OrderedList, Spacer, Text, useDisclosure } from '@chakra-ui/react';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import logo from '../../asset/LOGO-NASS-NOIR.png'
 import { Link } from 'react-router-dom';
@@ -121,8 +121,8 @@ function ChatApp() {
   style={{ maxHeight: '700px', maxWidth: '700px'}}
 >
   <Controls visible={false}  />
-</Player>
-</a>
+ </Player>
+ </a>
       <Modal
         isCentered
         onClose={onClose}
@@ -131,23 +131,23 @@ function ChatApp() {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
+          <ModalHeader>  Fonctionnement du bot: </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-         
+           <OrderedList spacing={3} fontSize="18px">
+            <ListItem>Envoyer 'hi' ou 'slt' pour le lancer. </ListItem>
+            <ListItem> Attendre la fin des reponses du bot avant de repondre.</ListItem>
+            <ListItem> Repondre uniquement par les propositions du bot. </ListItem>
+           </OrderedList>
           </ModalBody>
           <ModalFooter>
             <Button colorScheme='ghost' mr={3} onClick={onClose}>
               Close
             </Button>
-            
           </ModalFooter>
         </ModalContent>
       </Modal>
-
-
        </GridItem>
-
 </Grid>
 </DesktopRoot2>
     </div>

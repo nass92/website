@@ -1,9 +1,9 @@
 [
     { "three":true,
         "answer": ["'Sup|sup|Hello|Hi|hello|hi|Yo|Halla|yello|yelow'"],
-        "question": "Bienvenu à vous, mugiwara vous apportera les connaissance nécessaire pour vous lancer dans le monde la crypto-monnai",
-        "question3": "  etes vous pret à repondre à un  petit quizz de connaisance? repondre : lets go ou non tkt robot je gere'",
-        "question2": " L. lets go  X. Non tkt robot je gere. Repondre: L ou X uniquement"
+        "question": "Bienvenue à vous, mugiwara vous apportera les connaissances nécessaire pour vous lancer dans le monde la crypto-monnaie",
+        "question3": "  êtes vous prèt à repondre à un  petit quizz de connaisance?  ",
+        "question2": " L. let's go  X. Non tkt robot je gere. Repondre: L ou X uniquement"
     },
     {
         "three":false,
@@ -17,13 +17,13 @@
     },
     {   "three":true,
         "answer": ["1"],
-        "question": "Mauvaise réponse 😢 les Smart-Contrats sont des contrats inteligent (ex: acte notarié grace au nft). Une crypto-monnaie est un moyen d'échange décentralisé ne régissant d'aucune institution fonctionnant grace à une Blockchain",
+        "question": "Mauvaise réponse 😢 les Smart-Contrats sont des contrats inteligents (ex: acte notarié grace au nft). Une crypto-monnaie est un moyen d'échange décentralisé ne régissant d'aucune institution fonctionnant grace à une Blockchain",
         "question3": " 2eme question : Qu'est ce qu'une blockchain? 1",
         "question2": " A. Stockage et Transmission d'information. B. Un serveur. C. alors la ???  Repondre: A, B ou C uniquement"
     },
     {"three":true,
         "answer": ["2"],
-        "question": "Excatement😎 Mais Une crypto-monnaie est un moyen d'échange décentralisé ne régissant d'aucune instution.",
+        "question": "Exactement😎 on commence bien.",
         "question3": " 2eme question : Qu'est ce qu'une blockchain? 1.",
         "question2": " A. Stockage et Transmission d'information. B. Un Serveur. C. alors la ??? Repondre: A, B ou C uniquement "
     },
@@ -47,7 +47,7 @@
     },
     {"three":true,
         "answer": ["C"],
-        "question": "No Stress, une Blockchain c'est juste un livre comptable (une entré, une sorti et une valeur), ou plus communément appellée base de donnée, qui insrit et transmet toutes les information qui y passent",
+        "question": "No Stress, une Blockchain c'est juste un livre comptable (une entré, une sorti et une valeur), ou plus communément appellée base de donnée, qui insrit et transmet toutes les informations qui y passent",
         "question3": "3eme question : Et Ethereum: ?",
         "question2": " D. Une Crypto-monnaie E. Une plateforme logiciel qui permet de construire des applications décentralisées. Repondre: D ou E uniquement"
     },
@@ -59,8 +59,18 @@
     },
     {"three":true,
         "answer": ["E"],
-        "question": "On gere le domaine à ce que je vois. ",
+        "question": "On gère le domaine apparament. ",
         "question3": " 4eme question : Etes-vous interréssez en savoir plus?",
         "question2": " Y.Oui N. Non. Repondre: Y ou N uniquement"
+    },
+    {   "three":false,
+        "answer": ["ntm|NTM|ta mere|Ta mere|ta mère|ntm la pute|NTM la pute|ta mere la pute|Ta mere la pute|ta mère la pute|"],
+        "question": "Toi nique ta mère et tes morts fils de pute"
+       
+    },
+    {   "three":false,
+        "answer": ["tg|ta gueule| ferme ta gueule| ta gueul| ferme ta gueul| ta guelle| ferme ta gueulle"],
+        "question": "va te faire enculer",
+        "question2":"la con ta race"
     }
 ]

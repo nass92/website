@@ -9,7 +9,7 @@ import { Box,
   MenuItem,
   Link
 } from '@chakra-ui/react'
-import NavBurger, { LexDrawer } from './NavBurger';
+import NavBurger from './NavBurger';
 
 
 function Navbar() {
@@ -55,7 +55,7 @@ function Navbar() {
    
       <li class="nav-item">
       <Menu >
-        <MenuButton className="link-text" aria-label='Options' variant='link'   as={Button} size="2xs"ml= {['0px','00px','0px','70px','50px','70px']}  >Investissement</MenuButton>
+       <MenuButton color='#00000' className=" nav-link link-text" aria-label='Options' variant='link'   as={Button} size="2xs"ml= {['0px','00px','0px','70px','50px','70px']}   >Investissement</MenuButton>
         <MenuList>
         <a href="/mugiwara" ><MenuItem icon={ <RiExchangeDollarFill />} >Mugiwara</MenuItem></a>
         <a href="/tutoinvest" ><MenuItem icon={ <RiExchangeDollarFill />} >Tutoriel Pour Investir</MenuItem></a>

@@ -2,7 +2,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import {VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import { useDisclosure } from '@chakra-ui/hooks';
 import { BsCurrencyEuro, } from "react-icons/bs";
-import {Center, Container, Heading, Text } from "@chakra-ui/react";
+import {Center, Text } from "@chakra-ui/react";
 import {
   Modal,
   ModalOverlay,

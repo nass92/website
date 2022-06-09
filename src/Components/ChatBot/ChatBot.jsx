@@ -1,5 +1,4 @@
 import './ChatApp.css';
-import { useState} from 'react';
 import { Box, Button, Center, Container, Icon,Input, Link } from '@chakra-ui/react';
 import bot from '../../asset/bot2.svg'
 import quiz from './Quiz.json'
@@ -29,8 +28,8 @@ function ChatBot() {
       const status = document.querySelector('.status');
       botMessage.innerHTML = 'Typing...';
       setTimeout(() => {
-        botMessage.innerHTML = ` explorer notre site afin de vous formez au mieux  `;
-        botMessage2.innerHTML= `${<button>la</button>}`;
+        botMessage.innerHTML = ` launch App vous doonera un accés direct à la plateforme. `;
+        botMessage2.innerHTML= `Vous y trouverer un lexique, accessible à tout moment, des mots techniques les plus courrants. des informations sur les cryptos les plus importantes actuellement. Ansi que des tutoriels pour demarer l'aventure`;
         document.querySelector('#input').value = '';
       }, 2000);
       setTimeout(() => {

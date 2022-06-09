@@ -1,14 +1,14 @@
 [
     {
      "id": 1,
-     "titre": "Qu'est ce qu'une Crypto-monnaie",
+     "titre": "Une Crypto-monnaie",
      "lotties":false,
      "src":"https://nass.mypinata.cloud/ipfs/QmWxBNpXcWxF1tsX3TrjV5rFLnRhcmELhLSb9nAUDk64kr",
      "answer": "Lorsque vous faite un achat sur internet, vous utilisez plusieurs intermédiaires. Votre carte (visa ou mastercard), votre banque (BNP, SG, LCL ...), le service de paiement sur le site (strype, square, paypal...) puis viens la banque du vendeur. grâce à la crypto-monnaie, tout ces intermédiaires sont supprimés. en faisant un achat en BTC par exemple, le seul intermédiaire est le mineur qui valide l'envoie et inscrit la transaction sur la blockchain." },
      
     {
      "id": 2,
-     "titre": "Qu'est ce qu'une Blockchain",
+     "titre": "Une Blockchain",
      "lotties":true,
      "src":"https://assets8.lottiefiles.com/packages/lf20_lcufqcu1.json",
      "answer": "Tout d'abord, il faut la visualiser tel un livre de comptable, avec une entrée (from, celui qui envoi), une sortie (to, celui qui reçoit), numéro d'identifiant (N° de hash, chaque transaction dispose de son propre id), la tache exécutée (un envoi, un échange, un achat, création d'un contrat ...) la valeur envoyée et les frais de transactions payées. Toutes actions faites, y est inscrite. elle fonctionne grâce a des serveurs, tournant 24/24h, qui exécutent, valide, et inscrit ces actions dans un block. Une fois, le block plein et validé, il est ajouté au précédent ce qui forme un chaine de block (blockchain). Ce système, permet une résistance à la censure. Aucune modification, ou suppression, n'est possible, une fois la transaction inscrite. De plus, une blockchain, fonctionne généralement de façon décentralisée, c'est à dire que ce n'est pas une entité seul qui la gouverne, mais toutes les personnes qui participent a son fonctionnement."
@@ -36,33 +36,39 @@
      "answer": "Les avantages du smart contract sont multiples. Ces derniers permettent de, Sécuriser un accord entre deux parties (ou davantage), Automatiser le paiement et éliminer les risques d’impayés, Diminuer drastiquement les coûts intermédiaires dans l’élaboration, Mais aussi, le suivi et la passation d’un contrat (notaire, avocat). Plusieurs blockchains laissent la possibilité de déployer des smart contracts. la plus connue, à ce jour, est Ethereum; qui comprend déjà un grand nombre d’applications décentralisées programmées via contrats intelligents. On en retrouve plusieurs types selon les secteurs d’activités; Echanges monétaires décentralisés (0x, OmiseGo, MakerDAO), Jeux sur Blockchain ( Cryptokitties, My Crypto Heroes, Etheremon ), Cloud décentralisé (Storj, iEx.ec), Plateformes de marchés prédictifs : (Augur, Gnosis)."
     },  {
         "id": 6,
-        "titre": "Les Token ERC-20",
+        "titre": "Les Tokens ERC-20",
         "src":"",
-        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
+        "answer": "'ERC-20', est simplement le nom d'une norme (ex: un fruit est bio lorsqu'il suit les normes définit au bio). On dit qu'un token est ERC-20 lorsqu'il respecte des règles et un mode de fonctionnement standard définis au moment de sa création. Il peut s’agir d’une monnaie, d’actions d'entreprise, de points de fidélité... En suivant une norme de fonctionnement, cela permet d'échanger n'importe quel token ERC-20 contre un autre.(ex: on peut échanger un billet de 10$ contre un billet de 10€(+ quelque centimes) car ils suivent la même norme qui est un billet) "
 
        },
     {
         "id": 7,
-        "titre": "Et les NFT ?",
-        "src":"",
-        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
+        "titre": "NFT => None Fungible Token",
+        "src":"https://journalducoin-com.exactdn.com/app/uploads/2018/09/Opera-Instantane%CC%81_2018-09-11_113107_erc721.org-1.png?strip=all&lossy=1&quality=66&w=1152&ssl=1",
+        "answer": "Les NFT sont des tokens qui suivent une autre norme lors de leur création, qui est l'ERC-721. Un token ERC-721 ne peut etre échanger contre un token de la même norme, contrairement à un token-ERC20. Chaque NFT est un token unique avec ces propre caractéristique de fonctionnement. "
        },
        {
         "id": 8,
-        "titre": "Les Dapps et le web3 dans tout sa ?",
+        "titre": "Dapp => Application décentralisée",
         "src":"",
-        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
+        "answer": "Une application décentralisée (dApp) est une application construite sur un réseau décentralisé qui combine un contrat intelligent et une interface utilisateur. Une Dapp est dite ouverte car, ni aucun groupe, ni personne, n'a le contrôle dessus. "
+       },
+       {
+        "id": 8,
+        "titre": "Le Web3",
+        "src":"",
+        "answer": "Web2 fait référence à la version d'Internet que la plupart d'entre nous connaissent aujourd'hui. Un Internet dominé par les sociétés qui fournissent des services en échange de vos données personnelles. Le Web3, lui, fait référence aux applications décentralisées qui s'exécutent sur la blockchain. Ce sont des applications qui permettent à quiconque de participer sans monétiser ses données personnelles."
        },
        {
         "id": 9,
-        "titre": "Defi => La Finance pour tous",
+        "titre": "La Defi => La Finance pour tous",
         "src":"https://miro.medium.com/max/1400/1*KwYLsExGEnwVDuF68hsNjQ.png",
-        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
+        "answer": " L’objectif de la finance décentralisée est de permettre la transmission de valeur et la création d’une finance pour tous et sans intermédiaire comme peuvent l’être les banques ou les plateformes d’échange. La DeFi permet à n’importe qui d’obtenir des prêts. C’est un système totalement décentralisé pour les emprunteurs et il n’est pas possible qu’un prêt vous soit refusé. Il vous suffit d’avoir un accès à internet. Cela permet également aux prêteurs de faire travailler leur argent avec des taux d’intérêts décents !"
        },
      
        {
-        "id": 9,
-        "titre": "Play to Earn...What?",
+        "id": 10,
+        "titre": "le Play to Earn ",
         "src":"",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
        }

@@ -4,8 +4,6 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import { BsGoogle} from "react-icons/bs";
 import { GrValidate} from "react-icons/gr"
 import { Box, Center,  Container, Image, SimpleGrid, Text } from "@chakra-ui/react";
-import Moonpay from '../Steptu/Matic';
-import Settoken from '../Steptu/Settoken';
 import Metamask from '../Steptu/Metamask';
 import Fusée from '../navbar/fusée';
 import Navbar from '../navbar/navbar';

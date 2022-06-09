@@ -2,7 +2,7 @@
 import 'react-vertical-timeline-component/style.min.css';
 import {GiReceiveMoney} from "react-icons/gi"
 import {  VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import { Center, Heading, Text } from "@chakra-ui/react";
+import { Center, Text } from "@chakra-ui/react";
 import { useDisclosure } from '@chakra-ui/hooks';
 import {
   Modal,

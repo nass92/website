@@ -17,8 +17,6 @@ import {
     MenuList,
     MenuItem,
     Link,
-    Image,
-    Icon
   } from '@chakra-ui/react'
 
 import { LexMap } from '../Lexique/Lexique';
@@ -52,9 +50,10 @@ return (
             <Link href='/projet' id='logo1'>Cryptos</Link>
             <Link href='/steptuto' id='logo1'>Tutoriel</Link>
             <Menu >
-        <MenuButton id="launch" aria-label='Options' variant='link'   as={Button} size="2xs"ml= {['0px','00px','0px','70px','50px','70px']}  >Investissement</MenuButton>
+        <MenuButton color='#ffffff' className='lo' aria-label='Options' variant='link'   as={Button} size="2xs"ml= {['0px','00px','0px','70px','50px','70px']}  >Investissement</MenuButton>
         <MenuList color='#000000'>
         <a href="/mugiwara" ><MenuItem icon={ <RiExchangeDollarFill />} >Mugiwara</MenuItem></a>
+        <a href="/tutoinvest" ><MenuItem icon={ <RiExchangeDollarFill />} >Tutoriel Pour Investir</MenuItem></a>
         <Link  href="https://www.moonpay.com/buy" isExternal ><MenuItem icon={ <RiExchangeDollarFill />} >Buy $Matic</MenuItem></Link>
         <Link href="https://www.moonpay.com/buy" isExternal><MenuItem icon={<BsBank/>}> Invest In M_Index</MenuItem></Link>
         <a href="FAQ"> <MenuItem icon={<RiQuestionnaireLine />}>FAQ</MenuItem></a>
