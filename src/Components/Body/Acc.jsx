@@ -9,7 +9,7 @@ import {VscGraphLine} from "react-icons/vsc"
 import {CgDanger,} from "react-icons/cg"
 import Api from "../cryptoprice/CoinApi";
 import Navbar from "../navbar/navbar";
-import { Box, Center, Heading, Container, Text, Stat, SimpleGrid, StatLabel, Image } from "@chakra-ui/react";
+import { Box, Center, Heading, Container, Stat, SimpleGrid, StatLabel, Image } from "@chakra-ui/react";
 import SVG from '../../asset/lg.svg'
 
 function Acc() {

@@ -13,8 +13,7 @@ import {Text,
     ModalCloseButton,
     Button,
     Center,
-    Image,
-    Link,
+    Link
      } from '@chakra-ui/react'
   
 
@@ -62,7 +61,7 @@ return (
              La DeFi permet à n’importe qui d’obtenir des prêts. C’est un système totalement décentralisé pour les emprunteurs et il n’est pas possible qu’un prêt vous soit refusé. 
              Il vous suffit d’avoir un accès à internet. Cela permet également aux prêteurs de faire travailler leur argent avec des taux d’intérêts décents ! 
             </p>
-            <Center> <img id='im' src={Defi}/> </Center>
+            <Center> <img id='im' alt=" " src={Defi}/> </Center>
             <p>
               <h3>Et AAVE ?</h3>
                 Aave est un protocole open-source de finance décentralisée qui permet à n’importe qui de prêter et d’emprunter des cryptomonnaies. 

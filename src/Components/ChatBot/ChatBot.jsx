@@ -59,11 +59,12 @@ function ChatBot() {
                 document.querySelector('#input').value = '';
               }, 2000);
               
-              setTimeout(() => {
-               bool === true ? (botMessage2.innerHTML = answers3): (botMessage2.innerHTML = 'Typing...')
+              setTimeout(() => {// eslint-disable-next-line
+               {bool === true ? (botMessage2.innerHTML = answers3): (botMessage2.innerHTML = 'Typing...')}
                 document.querySelector('#input').value = '';
               }, 8000);
-              setTimeout(() => {bool === true ? (botMessage.innerHTML = answers3): (botMessage.innerHTML = answers)
+              setTimeout(() =>{// eslint-disable-next-line
+                 {bool === true ? (botMessage.innerHTML = answers3): (botMessage.innerHTML = answers)}
                 botMessage2.innerHTML = answers2;
                 document.querySelector('#input').value = '';
               }, 13000);

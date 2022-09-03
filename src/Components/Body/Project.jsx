@@ -1,7 +1,7 @@
 import {DesktopRoot} from "../../Css/style"
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { Box, Center, Container, Flex, Grid, GridItem, Image, SimpleGrid, Spacer } from "@chakra-ui/react";
+import { Box, Center, Container, Flex, Image, SimpleGrid, Spacer } from "@chakra-ui/react";
 import { GrValidate} from "react-icons/gr";
 import Weth from "../5cryptos/wEth";
 import Mana from "../5cryptos/Mana";

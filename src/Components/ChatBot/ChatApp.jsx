@@ -10,17 +10,14 @@ import { MdCheckCircle } from 'react-icons/md';
 
 function ChatApp() {
   const date = new Date();
-  const hours = date.getHours();
-  const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
   const day = date.getDay();
   const month = date.getMonth();
   const year = date.getFullYear();
 
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  const [time, setTime] = useState(`${hours}:${minutes}:${seconds}`); //using the useState hook to get the data from the local time and set it to the time variable
-  const [dateTime, setDateTime] = useState(`${days[day]}, ${day} ${months[month]} ${year}`); //using the useState hook to get the data from the local date and set it to the dateTime variable
+ ; //using the useState hook to get the data from the local time and set it to the time variable
+  const [dateTime, ] = useState(`${days[day]}, ${day} ${months[month]} ${year}`); //using the useState hook to get the data from the local date and set it to the dateTime variable
   // console.log(dateTime);
 
   const checkStatus = (e) => {
@@ -113,8 +110,9 @@ function ChatApp() {
 
 <GridItem  colSpan={[3]}    >
  
-<a onClick={onOpen}>
+<button onClick={onOpen}>
   <Player
+  
   autoplay
   loop
   src="https://assets5.lottiefiles.com/packages/lf20_96bovdur.json"
@@ -122,7 +120,7 @@ function ChatApp() {
 >
   <Controls visible={false}  />
  </Player>
- </a>
+ </button>
       <Modal
         isCentered
         onClose={onClose}
