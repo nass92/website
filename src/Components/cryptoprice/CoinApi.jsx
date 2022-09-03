@@ -3,7 +3,7 @@ import axios from "axios";
 import Coin from "./CryptoMarket";
 
 
-const Api = ({ setCrypto }) => {
+const Api = () => {
   const [coins, setCoins] = useState([])
   const [search,] = useState('')
 

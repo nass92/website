@@ -22,7 +22,7 @@ import {
 import { LexMap } from '../Lexique/Lexique';
 import { RiExchangeDollarFill, RiQuestionnaireLine } from 'react-icons/ri';
 import { BsBank } from 'react-icons/bs';
-import SVG from '../../asset/lg.svg'
+
 
 const NavBurger = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()

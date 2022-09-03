@@ -1,9 +1,7 @@
-import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { VerticalTimeline } from "react-vertical-timeline-component/dist-modules";
 import { DesktopRoot } from "../../Css/style";
 import Navbar from "../navbar/navbar";
-import { BiBookReader } from 'react-icons/bi';
 import SVG from '../../asset/lg.svg'
 import Def from "./Def";
 import titre from './Lx.json'

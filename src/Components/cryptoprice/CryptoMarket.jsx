@@ -1,8 +1,8 @@
-import { Stat, StatGroup,Logo, StatLabel, StatNumber, StatHelpText, StatArrow, Icon, Image, SimpleGrid, Box, Text, Heading } from '@chakra-ui/react'
+import { Stat,  StatLabel, StatNumber, StatHelpText, StatArrow,  Image, SimpleGrid, Box } from '@chakra-ui/react'
 import React from 'react'
 import '../../Css/CoinApi.css'
 
-const Coin = ({  image, symbol, price,  priceChange, marketcap }) => {
+const Coin = ({  image, price,  priceChange }) => {
 
   return (<>
 

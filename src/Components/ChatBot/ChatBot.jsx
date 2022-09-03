@@ -1,5 +1,5 @@
 import './ChatApp.css';
-import { Box, Button, Center, Container, Icon,Input, Link } from '@chakra-ui/react';
+import { Box, Button, Center, Container, Input, Link } from '@chakra-ui/react';
 import bot from '../../asset/bot2.svg'
 import quiz from './Quiz.json'
 function ChatBot() {
@@ -44,7 +44,7 @@ function ChatBot() {
       //quiz Json List 
       for (var key in quiz) {
         console.log('ici', key)
-          let owner1 =  quiz[key].answer;
+          
           console.log(quiz[key].answer)
           let bool = quiz[key].three;
           let answers = quiz[key].question;
@@ -60,11 +60,10 @@ function ChatBot() {
               }, 2000);
               
               setTimeout(() => {
-               {bool === true ? (botMessage2.innerHTML = answers3): (botMessage2.innerHTML = 'Typing...')}
+               bool === true ? (botMessage2.innerHTML = answers3): (botMessage2.innerHTML = 'Typing...')
                 document.querySelector('#input').value = '';
               }, 8000);
-              setTimeout(() => { {bool === true ? (botMessage.innerHTML = answers3): (botMessage.innerHTML = answers)}
-               
+              setTimeout(() => {bool === true ? (botMessage.innerHTML = answers3): (botMessage.innerHTML = answers)
                 botMessage2.innerHTML = answers2;
                 document.querySelector('#input').value = '';
               }, 13000);
@@ -96,15 +95,6 @@ function ChatBot() {
  
 
 
-
-  const CircleIcon = (props) => (
-    <Icon viewBox='0 0 200 200' {...props}>
-      <path
-        fill='currentColor'
-        d='M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0'
-      />
-    </Icon>
-  )
   return (
 
         
